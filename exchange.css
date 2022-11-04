@@ -1,0 +1,27 @@
+#lit {
+ line-height: 2.3em;
+ position: relative;
+ top: -.5em;
+}
+
+.lit{
+ opacity: 1;
+ transition-property: opacity;
+ transition-duration: .512s;
+}
+
+#page {
+ padding-bottom: 0em;
+}
+
+@media only screen and (min-width: 768px) {
+
+ #lit {
+  width: 50%;
+ }
+
+ #page {
+  padding-bottom: 1.5em;
+ }
+
+}
