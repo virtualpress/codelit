@@ -1,0 +1,15 @@
+.content {
+ position: relative;
+}
+
+.absolute {
+ visibility: hidden;
+}
+
+.v {
+ visibility: visible;
+}
+
+.h {
+ visibility: hidden;
+}

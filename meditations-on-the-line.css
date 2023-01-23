@@ -1,0 +1,42 @@
+#sun {
+ display: none;
+}
+
+#moon {
+ display: none;
+}
+
+.lit {
+ color: black;
+}
+
+.catalog {
+ display: flex;
+}
+
+.numeral {
+ min-width: 3em;
+}
+
+.magical {
+ margin-left: auto;
+}
+
+input {
+ font-family: "Source Code Pro", monospace;
+ font-size: 1em;
+ color: #ffffff;
+ background: #000000;
+ outline: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+ .numeral {
+  min-width: 4em;
+ }
+
+}

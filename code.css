@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+html, body, div, span, h1, p, a, i, em, b, ul, li, button, input {
+ margin: 0;
+ padding: 0;
+ outline: 0;
+ border: 0;
+ vertical-align: baseline;
+ font-weight: inherit;
+ font-style: inherit;
+ font-family: inherit;
+ font-size: 100%;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+html, body {
+ font-family: "Source Code Pro", monospace;
+ font-size: 16px;
+ color: #ffffff;
+ background: #000000;
+ min-height: 100vh;
+ cursor: default;
+ -webkit-user-select: none;
+ user-select: none;
+}
+
+#page {
+ padding: 1em;
+}
+
+p {
+ font-size: 1em;
+ padding-top: 1em;
+}
+
+.header {
+ padding-top: 0em;
+}
+
+.contents {
+ padding-top: 2em;
+}
+
+.content {
+ padding-top: 1em;
+}
+
+#footer {
+ padding-top: 2em;
+}
+
+a {
+ color: #ffffff;
+ text-decoration: none;
+ transition-duration: 0.256s;
+ cursor: default;
+}
+
+em, i {
+ font-style: italic;
+}
+
+b {
+ font-weight: bold;
+}
+
+.l {
+ text-align: left;
+}
+
+.r {
+ text-align: right;
+}
+
+.c {
+ text-align: center;
+}
+
+.j {
+ text-align: justify;
+}
+
+.absolute {
+ position: absolute;
+}
+
+.fixed {
+ position: fixed;
+}
+
+.relative {
+ position: relative;
+}
+
+.sticky {
+ position: sticky;
+}
+
+#error {
+ white-space: pre;
+}
+
+#egg {
+ display: none;
+}
+
+audio {
+ display: none;
+}
+
+video {
+ position: fixed;
+ top: 0;
+ margin-left: 50vw;
+ transform: translate(-50%,-10%);
+ opacity: 0.8;
+ z-index: -1;
+}
+
+img {
+ position: fixed;
+ top: 0;
+ margin-left: 50vw;
+ transform: translate(-50%);
+ min-height: 100%;
+ opacity: 0.8;
+ z-index: -2;
+}
+
+img.small {
+ min-height: 120%;
+ transform: translate(-50%,-10%);
+}
+
+img.large {
+ min-height: 180%;
+ transform: translate(-50%,-20%);
+}
+
+input {
+ font-family: "Source Code Pro", monospace;
+ font-size: 1em;
+ color: #ffffff;
+ background: #000000;
+ outline: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ cursor: default;
+}
+
+@media only screen and (min-width: 768px) {
+
+ #page {
+  padding: 3em;
+ }
+
+ p {
+  font-size: 1.5em;
+ }
+
+ .content {
+  padding-top: 1.5em;
+ }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+ body {
+  -webkit-text-size-adjust: none;
+ }
+
+}
+
+@media (hover: hover) {
+
+ a:hover {
+  opacity: 0.32;
+ }
+
+}

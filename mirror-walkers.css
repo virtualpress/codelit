@@ -1,0 +1,47 @@
+.float {
+ float: left;
+}
+
+.lit {
+ display: flex;
+ padding-bottom: 1em;
+ white-space: nowrap;
+}
+
+.left {
+ flex: 50%;
+ margin-right: .5em;
+ text-align: right;
+}
+
+.right {
+ flex: 50%;
+ margin-left: .5em;
+ text-align: left;
+}
+
+.zero {
+ transition-property: opacity;
+ transition-duration: .256s;
+}
+
+.one {
+ transition-property: opacity;
+ transition-duration: .256s;
+}
+
+@media only screen and (min-width: 768px) {
+
+ .lit {
+  padding-bottom: 3em;
+ }
+
+ .left {
+  margin-right: 1em;
+ }
+
+ .right {
+  margin-left: 1em;
+ }
+
+}
