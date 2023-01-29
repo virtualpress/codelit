@@ -1,0 +1,18 @@
+.zero, .one {
+ position: absolute;
+ transition-property: opacity;
+ transition-duration: .512s;
+}
+
+.zero {
+ opacity: 0;
+}
+
+.one {
+ opacity: 1;
+}
+
+.hidden {
+ visibility: hidden;
+ line-height: 1em;
+}
