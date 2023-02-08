@@ -1,3 +1,11 @@
 .lit {
  opacity: 0;
 }
+
+@media (hover: hover) {
+
+ .lit:hover {
+  opacity: 1;
+ }
+
+}
