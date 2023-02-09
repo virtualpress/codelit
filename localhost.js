@@ -214,12 +214,12 @@ document.addEventListener("keypress", function(event) {
   document.getElementById("3301").play();
   document.getElementById("3301").volume = 0.4;
  }
- if (egg.slice(-3) == "cdc") {
+ if (egg.slice(-7) == "deadcow") {
   opaque(document.body);
   none(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="cdc"><source src="egg/cdc.mp3" type="audio/mpeg"></audio>';
-  document.getElementById("cdc").play();
-  document.getElementById("cdc").volume = 0.4;
+  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="deadcow"><source src="egg/deadcow.mp3" type="audio/mpeg"></audio>';
+  document.getElementById("deadcow").play();
+  document.getElementById("deadcow").volume = 0.4;
  }
  if (egg.slice(-14) == "enterthematrix") {
   opaque(document.body);
