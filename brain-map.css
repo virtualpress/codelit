@@ -1,0 +1,5 @@
+.lit {
+ opacity: 1;
+ transition-property: opacity;
+ transition-duration: 4s;
+}

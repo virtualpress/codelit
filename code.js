@@ -66,6 +66,8 @@ function blink() {
 
 blink = setInterval(blink, 512);
 
+var touch = ("ontouchstart" in document.documentElement);
+
 function storage() {
  try {
   localStorage.setItem("test", "test");
