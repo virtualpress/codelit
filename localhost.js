@@ -71,9 +71,9 @@ function footer(n) {
  } else if (n < 84) {
   document.getElementById("footer").innerHTML = '<a onclick="read();">READ SOMETHING RANDOM</a>';
  } else if (n < 86) {
-  document.getElementById("footer").innerHTML = '<a onclick="encrypt();">ENCRYPT TITLES</a>';
+  document.getElementById("footer").innerHTML = '<a href="mailto:codelit@codelit.com">CONTACT</a>';
  } else if (n < 88) {
-  document.getElementById("footer").innerHTML = '<a onclick="redact();">REDACT AUTHORS</a>';
+  document.getElementById("footer").innerHTML = '<a href="mailto:codelit@codelit.com">SUBMIT</a>';
  } else if (n < 90) {
   document.getElementById("footer").innerHTML = '<a href="https://defcon.org" target="_blank">GO TO DEF CON</a>';
  } else if (n == 90) {
@@ -127,66 +127,18 @@ function read() {
  window.location = url;
 }
 
-var encrypts;
-
-var redacts;
-
-var titles = 0;
-
-var characters = 0;
-
-var authors = 0;
-
-function encrypt() {
- if (encrypts == null) {
-  encrypts = setInterval(encryption, 32);
- }
-}
-
-function encryption() {
- if (titles == document.getElementsByClassName("title").length) {
-  clearInterval(encrypts);
-  if (redacts == null && random(2) == 0) {
-   footer(86);
-  } else {
-   footer(64);
-  }
- } else {
-  var title = document.getElementsByClassName("title")[titles].innerHTML;
-  document.getElementsByClassName("title")[titles].innerHTML = title.slice(0, characters) + random(10) + title.slice(characters + 1, title.length);
-  characters++;
-  if (characters == title.length) {
-   titles++;
-   characters = 0;
-  }
- }
-}
-
-function redact() {
- if (redacts == null) {
-  redacts = setInterval(redaction, 128);
- }
-}
-
-function redaction() {
- if (authors == document.getElementsByClassName("author").length) {
-  clearInterval(redacts);
-  if (encrypts == null && random(2) == 0) {
-   footer(84);
-  } else {
-   footer(64);
-  }
- } else {
-  document.getElementsByClassName("author")[authors].innerHTML = "anonymous";
-  authors++;
- }
-}
-
 var egg = "";
 
 var count = 0;
 
-var powerup = "";
+document.addEventListener("keydown", function(event) {
+ if (event.code == "ArrowLeft") {
+   history.back();
+ }
+ if (event.code == "ArrowRight") {
+   history.forward();
+ }
+});
 
 document.addEventListener("keypress", function(event) {
  if (event.code != "Space") {
@@ -247,20 +199,5 @@ document.addEventListener("keypress", function(event) {
  }
  if (egg.length > 64) {
   egg = egg.slice(-32);
- }
-});
-
-document.addEventListener("keydown", function(event) {
- powerup += event.code;
- if (powerup.slice(-78) == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyA") {
-  opaque(document.body);
-  none(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="powerup"><source src="egg/powerup.m4a" type="audio/mp4"></audio>';
-  document.getElementById("powerup").play();
-  document.getElementById("powerup").volume = 0.4;
-  document.getElementById("footer").innerHTML = '<a href="mailto:codelit@codelit.com">SUBMIT</a>';
- }
- if (powerup.length > 256) {
-  powerup = powerup.slice(-128);
  }
 });
