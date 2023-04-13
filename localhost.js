@@ -131,15 +131,6 @@ var egg = "";
 
 var count = 0;
 
-document.addEventListener("keydown", function(event) {
- if (event.code == "ArrowLeft") {
-   history.back();
- }
- if (event.code == "ArrowRight") {
-   history.forward();
- }
-});
-
 document.addEventListener("keypress", function(event) {
  if (event.code != "Space") {
   egg += event.key.toLowerCase();

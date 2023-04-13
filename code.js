@@ -79,3 +79,12 @@ function storage() {
 }
 
 var storage = storage();
+
+document.addEventListener("keydown", function(event) {
+ if (event.code == "ArrowLeft") {
+   history.back();
+ }
+ if (event.code == "ArrowRight") {
+   history.forward();
+ }
+});
