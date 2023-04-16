@@ -7,6 +7,7 @@
  </head>
  <body>
   <?php include "header.php";?>
+   <p class="contents"><a href="brain-map" class="title">BRAIN MAP</a><br>// <a href="https://www.annevalente.com/" target="_blank" class="author">anne valente</a></p>
    <p class="contents"><a href="obit-in-translation" class="title">OBIT, IN TRANSLATION</a><br>// <a href="https://liwenxu.wixsite.com/website" target="_blank" class="author">liwen xu</a></p>
    <p class="contents"><a href="poem-in-which-foreboding-again-figures-prominently" class="title">POEM IN WHICH FOREBODING AGAIN FIGURES PROMINENTLY</a><br>// <a href="https://katemlucas.com/" target="_blank" class="author">kate lucas</a></p>
    <p class="contents"><a href="inspector-4" class="title">INSPECTOR 4</a><br>// <a href="https://www.fourforaquarter.com/" target="_blank" class="author">michael martone</a></p>
