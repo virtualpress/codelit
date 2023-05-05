@@ -2,7 +2,7 @@
 <?php include "comment.php";?>
 <html>
  <head>
-  <title>INSPECTOR 4 // Michael Martone</title>
+  <title>INSPECTOR 4 // michael martone</title>
   <?php include "meta.php";?>
   <link rel="stylesheet" type="text/css" href="inspector-4.css">
  </head>
