@@ -1,0 +1,36 @@
+.grid {
+ display: grid;
+ grid-template-columns: 50% 50%;
+ padding: 2em 0;
+}
+
+.place {
+ border: 2px solid;
+ padding: 2em;
+ margin: 2px;
+ text-align: center;
+}
+
+.list {
+ display: flex;
+}
+
+.numeral {
+ min-width: 3em;
+}
+
+.place .analysis {
+ font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+ .place {
+  padding: 4em;
+ }
+
+ .numeral {
+  min-width: 4em;
+ }
+
+}
