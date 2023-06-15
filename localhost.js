@@ -63,6 +63,52 @@ function untype() {
 
 setTimeout(type, 4096);
 
+var content;
+
+var contents = [
+ {page:"how-to-write-a-novel-in-seven-years", title:"HOW TO WRITE A NOVEL IN SEVEN YEARS", link:"https://www.jmarceloborromeo.com/", author:"j marcelo borromeo"},
+ {page:"excoriator", title:"EXCORIATOR", link:undefined, author:"nick marshall"},
+ {page:"discrepancies", title:"DISCREPANCIES", link:"https://mwektaehtabr.com/", author:"matthew baker"},
+ {page:"brain-map", title:"BRAIN MAP", link:"https://www.annevalente.com/", author:"anne valente"},
+ {page:"obit-in-translation", title:"OBIT, IN TRANSLATION", link:"https://liwenxu.wixsite.com/website", author:"liwen xu"},
+ {page:"poem-in-which-foreboding-again-figures-prominently", title:"POEM IN WHICH FOREBODING AGAIN FIGURES PROMINENTLY", link:"https://katemlucas.com/", author:"kate lucas"},
+ {page:"inspector-4", title:"INSPECTOR 4", link:"https://www.fourforaquarter.com/", author:"michael martone"},
+ {page:"between-the-lines", title:"BETWEEN THE LINES", link:"https://www.kellyluce.com/", author:"kelly luce"},
+ {page:"romance-languages", title:"ROMANCE LANGUAGES", link:"https://kanakkapur.carrd.co/", author:"kanak kapur"},
+ {page:"ephemeral", title:"EPHEMERAL", link:"https://mwektaehtabr.com/", author:"matthew baker"},
+ {page:"terminal", title:"TERMINAL", link:"https://www.keithrleonard.com/", author:"keith leonard"},
+ {page:"criminality", title:"CRIMINALITY", link:"https://umkalra.carrd.co", author:"umang kalra"},
+ {page:"exchange", title:"EXCHANGE", link:"https://www.rosaliemoffett.com/", author:"rosalie moffett"},
+ {page:"reverberations", title:"REVERBERATIONS", link:"https://sam-ross-4cah.squarespace.com/", author:"sam ross"},
+ {page:"who-you-are-who-am-i", title:"WHO YOU ARE, WHO AM I", link:"https://www.autumnhouse.org/our-authors/cundieff-melissa/", author:"melissa cundieff"},
+ {page:"frame-of-reference", title:"FRAME OF REFERENCE", link:"https://www.simonhan.com/", author:"simon han"},
+ {page:"the-extinction-of-homo-sapiens", title:"THE EXTINCTION OF HOMO SAPIENS", link:"https://mwektaehtabr.com/", author:"matthew baker"},
+ {page:"eat-me", title:"EAT ME (ALTERNATIVE SCENARIOS IN THE GARDEN OF EDEN)", link:"https://www.allegrahyde.com/", author:"allegra hyde"},
+ {page:"meditations-on-the-line", title:"MEDITATIONS ON THE LINE", link:"https://www.tianaclark.com/", author:"tiana clark"},
+ {page:"three-men-in-trouble", title:"THREE MEN IN TROUBLE", link:"https://lydia-conklin.com/", author:"lydia conklin"},
+ {page:"mirror-walkers", title:"MIRROR WALKERS", link:"https://www.naheedphirozepatel.com/", author:"naheed phiroze patel"},
+ {page:"once", title:"ONCE", link:"https://www.chadabushanab.com/", author:"chad abushanab"},
+ {page:"a-permanent-but-shifting-valley", title:"A PERMANENT BUT SHIFTING VALLEY", link:"https://sam-ross-4cah.squarespace.com/", author:"sam ross"},
+ {page:"writers-block", title:"WRITER'S BLOCK", link:"https://mwektaehtabr.com", author:"matthew baker"}
+];
+
+while (contents.length > 0) {
+ if (random(8) == 0) {
+  var n = 0;
+ } else {
+  var n = random(contents.length);
+ }
+ if ( contents[n].link != undefined ) {
+  content = '<p class="contents"><a href="' + contents[n].page + '" class="title">' + contents[n].title + '</a><br>// <a href="' + contents[n].link + '" target="_blank" class="author">' + contents[n].author + '</a></p>'
+ } else {
+  content = '<p class="contents"><a href="' + contents[n].page + '" class="title">' + contents[n].title + '</a><br>// ' + contents[n].author + '</p'
+ }
+ document.getElementById("page").innerHTML += content;
+ contents.splice(n, 1);
+}
+
+document.getElementById("page").innerHTML += '<?php include "footer.php";?>';
+
 function footer(n) {
  if (n < 64) {
   document.getElementById("footer").innerHTML = '<a href="about">ABOUT</a>';
