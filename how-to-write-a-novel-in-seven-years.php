@@ -4,6 +4,7 @@
  <head>
   <title>HOW TO WRITE A NOVEL IN SEVEN YEARS // j marcelo borromeo</title>
   <?php include "meta.php";?>
+  <link rel="stylesheet" type="text/css" href="how-to-write-a-novel-in-seven-years.css">
  </head>
  <body>
   <?php include "header.php";?>

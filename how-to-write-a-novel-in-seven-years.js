@@ -103,4 +103,4 @@ function clicker() {
  }
 }
 
-document.body.addEventListener("click", clicker);
+document.getElementsByClassName("content")[0].addEventListener("click", clicker);

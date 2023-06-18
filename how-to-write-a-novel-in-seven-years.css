@@ -1,0 +1,18 @@
+#page {
+ padding-bottom: 0em;
+}
+.content {
+ padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+
+ #page {
+  padding-bottom: 0em;
+ }
+
+ .content {
+  padding-bottom: 3em;
+ }
+ 
+}
