@@ -7,6 +7,7 @@
  </head>
  <body>
   <?php include "header.php";?>
+   <p class="contents"><a href="https://codelit.com/therapy-worksheet-cognitive-distortion-analysis" class="title">THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS</a><br>// <a href="https://www.rachelmennies.com/" target="_blank" class="author">rachel mennies</a></p>
    <p class="contents"><a href="how-to-write-a-novel-in-seven-years" class="title">HOW TO WRITE A NOVEL IN SEVEN YEARS</a><br>// <a href="https://www.jmarceloborromeo.com/" target="_blank" class="author">j marcelo borromeo</a></p>
    <p class="contents"><a href="excoriator" class="title">EXCORIATOR</a><br>// nick marshall</p>
    <p class="contents"><a href="discrepancies" class="title">DISCREPANCIES</a><br>// <a href="https://mwektaehtabr.com/" target="_blank" class="author">matthew baker</a></p>
