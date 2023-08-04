@@ -66,6 +66,7 @@ setTimeout(type, 4096);
 var content;
 
 var contents = [
+ {page:"therapy-worksheet-cognitive-distortion-analysis", title:"THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS", link:"https://www.rachelmennies.com/", author:"rachel mennies"},
  {page:"how-to-write-a-novel-in-seven-years", title:"HOW TO WRITE A NOVEL IN SEVEN YEARS", link:"https://www.jmarceloborromeo.com/", author:"j marcelo borromeo"},
  {page:"excoriator", title:"EXCORIATOR", link:undefined, author:"nick marshall"},
  {page:"discrepancies", title:"DISCREPANCIES", link:"https://mwektaehtabr.com/", author:"matthew baker"},
