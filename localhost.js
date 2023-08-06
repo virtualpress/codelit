@@ -108,7 +108,7 @@ while (contents.length > 0) {
  contents.splice(n, 1);
 }
 
-document.getElementById("page").innerHTML += '<?php include "footer.php";?>';
+document.getElementById("page").innerHTML += '<p id="footer"></p>';
 
 function footer(n) {
  if (n < 64) {
