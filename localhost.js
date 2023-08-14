@@ -90,7 +90,6 @@ var contents = [
  {page:"who-you-are-who-am-i", title:"WHO YOU ARE, WHO AM I", link:"https://www.autumnhouse.org/our-authors/cundieff-melissa/", author:"melissa cundieff"},
  {page:"mirror-walkers", title:"MIRROR WALKERS", link:"https://www.naheedphirozepatel.com/", author:"naheed phiroze patel"},
  {page:"once", title:"ONCE", link:"https://www.chadabushanab.com/", author:"chad abushanab"},
- {page:"writers-block", title:"WRITER'S BLOCK", link:"https://mwektaehtabr.com", author:"matthew baker"}
 ];
 
 while (contents.length > 0) {
@@ -99,14 +98,19 @@ while (contents.length > 0) {
  } else {
   var n = random(contents.length);
  }
+ if (contents.length > 16 && n >= contents.length - 2) {
+  n = random(8);
+ }
  if ( contents[n].link != undefined ) {
   content = '<p class="contents"><a href="' + contents[n].page + '" class="title">' + contents[n].title + '</a><br>// <a href="' + contents[n].link + '" target="_blank" class="author">' + contents[n].author + '</a></p>'
  } else {
-  content = '<p class="contents"><a href="' + contents[n].page + '" class="title">' + contents[n].title + '</a><br>// ' + contents[n].author + '</p'
+  content = '<p class="contents"><a href="' + contents[n].page + '" class="title">' + contents[n].title + '</a><br>// ' + contents[n].author + '</p>'
  }
  document.getElementById("page").innerHTML += content;
  contents.splice(n, 1);
 }
+
+document.getElementById("page").innerHTML += '<p class="contents"><a href="writers-block" class="title" style="color: rgb(255, 204, 207);">WRITER\'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" target="_blank" class="author" style="color: rgb(255, 204, 207);">matthew baker</a></p>';
 
 document.getElementById("page").innerHTML += '<p id="footer"></p>';
 
