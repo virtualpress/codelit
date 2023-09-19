@@ -17,7 +17,7 @@ while (n < t) {
  while (right[i] == undefined) {
   i = random(right.length);
  }
- width = random(80);
+ width = random(100);
  height = random(76) + 4;
  if (touch) {
   document.getElementById("words").innerHTML += "<span class=\"right\" style=\"left:" + width + "vw; top:" + height + "vh;\" onclick=\"thrill()\">" + right[i] + "</span>";
@@ -39,7 +39,7 @@ while (n < t) {
  while (wrong[i] == undefined) {
   i = random(wrong.length);
  }
- width = random(80);
+ width = random(100);
  height = random(76) + 4;
  if (touch) {
   document.getElementById("words").innerHTML += "<span class=\"wrong\" style=\"left:" + width + "vw; top:" + height + "vh;\" onclick=\"thrill()\">" + wrong[i] + "</span>";
