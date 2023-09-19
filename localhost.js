@@ -70,6 +70,7 @@ var contents = [
  {page:"meditations-on-the-line", title:"MEDITATIONS ON THE LINE", link:"https://www.tianaclark.com/", author:"tiana clark"},
  {page:"obit-in-translation", title:"OBIT, IN TRANSLATION", link:"https://liwenxu.wixsite.com/website", author:"liwen xu"},
  {page:"discrepancies", title:"DISCREPANCIES", link:"https://mwektaehtabr.com/", author:"matthew baker"},
+ {page:"another-thrill", title:"ANOTHER THRILL", link:"https://www.anderscarlsonwee.com", author:"anders carlson-wee"},
  {page:"therapy-worksheet-cognitive-distortion-analysis", title:"THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS", link:"https://www.rachelmennies.com/", author:"rachel mennies"},
  {page:"how-to-write-a-novel-in-seven-years", title:"HOW TO WRITE A NOVEL IN SEVEN YEARS", link:"https://www.jmarceloborromeo.com/", author:"j marcelo borromeo"},
  {page:"excoriator", title:"EXCORIATOR", link:undefined, author:"nick marshall"},
