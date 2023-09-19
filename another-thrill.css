@@ -1,0 +1,22 @@
+#words {
+ position: absolute;
+}
+
+.right, .wrong {
+ position: absolute;
+}
+
+.lit {
+ visibility: hidden;
+ opacity: 0.2;
+ transition-property: opacity;
+ transition-duration: 2s;
+}
+
+@media only screen and (max-width: 768px) {
+
+.lit {
+ transition-duration: .5s;
+}
+
+}
