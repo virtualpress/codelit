@@ -21,8 +21,8 @@
     <p><span class="lit">in</span> <span class="lit">little</span> <span class="lit">golden</span> <span class="lit">locks</span> <span class="lit">and</span> <span class="lit">then</span></p>
     <p><span class="lit">walking</span> <span class="lit">into</span> <span class="lit">the</span> <span class="lit">shop</span></p>
     <p><span class="lit">for</span> <span class="lit">the</span> <span class="lit">first</span> <span class="lit">time</span> <span class="lit">in</span> <span class="lit">your</span> <span class="lit">life</span></p>
-    <p><span class="lit">to</span> <span class="lit">return</span> <span class="lit">the</span> <span class="lit">bottle</span> <span class="lit">for</span> <span class="lit">cold</span></p>
-    <p><span class="lit">cash</span> <span class="lit">no</span> <span class="lit">questions</span> <span class="lit">asked.</span></p>
+    <p><span class="lit">to</span> <span class="lit">return</span> <span class="lit">the</span> <span class="lit">empty</span> <span class="lit">bottle</span> <span class="lit">for</span></p>
+    <p><span class="lit">cold</span> <span class="lit">cash</span> <span class="lit">no</span> <span class="lit">questions</span> <span class="lit">asked.</span></p>
    </div>
   <?php include "footer.php";?>
   <script src="another-thrill.js"></script>
