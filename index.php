@@ -65,9 +65,7 @@
      }
      array_splice($contents, $n, 1);
     }
-   ?>
-   <p class="contents"><a href="writers-block" class="title">WRITER'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" target="_blank" class="author">matthew baker</a></p>
-   <p id="footer"><?php
+   ?><p class="contents"><a href="writers-block" class="title">WRITER'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" target="_blank" class="author">matthew baker</a></p><p class="contents"><?php
     $n = rand(0,99);
     if ($n < 64) {
      echo '<a href="about">ABOUT</a>';
