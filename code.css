@@ -108,6 +108,10 @@ b {
  position: sticky;
 }
 
+.keyboard {
+ display: none;
+}
+
 #error {
  white-space: pre;
 }
@@ -189,6 +193,10 @@ input {
 
  a:hover {
   opacity: 0.32;
+ }
+
+ .keyboard {
+  display: block;
  }
 
 }
