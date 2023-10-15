@@ -43,5 +43,4 @@
     echo "root";
   }
 ?>.jpg" />
-  <meta name="twitter:card" content="summary" />
   <link rel="stylesheet" type="text/css" href="code.css">
