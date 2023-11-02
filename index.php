@@ -72,31 +72,31 @@
     } elseif ($n < 80) {
      echo '<a onclick="erase();">DELETE WEBSITE</a>';
     } elseif ($n < 84) {
-     echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
-    } elseif ($n < 86) {
-     echo '<a href="mailto:codelit@codelit.com">CONTACT</a>';
-    } elseif ($n < 88) {
      echo '<a href="mailto:codelit@codelit.com">SUBMIT</a>';
+    } elseif ($n < 86) {
+     echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
+    } elseif ($n < 88) {
+     echo '<a href="https://github.com/virtualpress/codelit" target="_blank">VIEW SOURCE CODE</a>';
     } elseif ($n < 90) {
      echo '<a href="https://defcon.org" target="_blank">GO TO DEF CON</a>';
     } elseif ($n == 90) {
      echo '<a href="https://supporters.eff.org/donate/join-eff-4" target="_blank">DONATE TO THE ELECTRONIC FRONTIER FOUNDATION</a>';
     } elseif ($n == 91) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contribute" target="_blank">DONATE TO DDOSECRETS</a>';
+     echo '<a href="https://noyb.eu/en/donations-other-support-options" target="_blank">DONATE TO NOYB</a>';
     } elseif ($n == 92) {
-     echo '<a href="https://shop.wikileaks.org/donate" target="_blank">DONATE TO WIKILEAKS</a>';
+     echo '<a href="https://www.ddosecrets.com/wiki/Contribute" target="_blank">DONATE TO DDOSECRETS</a>';
     } elseif ($n == 93) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contact" target="_blank">SEND A CLASSIFIED DOC TO DDOSECRETS</a>';
+     echo '<a href="https://shop.wikileaks.org/donate" target="_blank">DONATE TO WIKILEAKS</a>';
     } elseif ($n == 94) {
-     echo '<a href="https://wikileaks.com/#submit" target="_blank">SEND A CLASSIFIED DOC TO WIKILEAKS</a>';
+     echo '<a href="https://www.ddosecrets.com/wiki/Contact" target="_blank">SEND A CLASSIFIED DOC TO DDOSECRETS</a>';
     } elseif ($n == 95) {
-     echo '<a href="mailto:potus@whitehouse.gov">EMAIL THE PRESIDENT</a>';
+     echo '<a href="https://wikileaks.com/#submit" target="_blank">SEND A CLASSIFIED DOC TO WIKILEAKS</a>';
     } elseif ($n == 96) {
-     echo '<a href="http://en.letters.kremlin.ru/letters/send" target="_blank">FILE A LETTER OF COMPLAINT WITH THE KREMLIN</a>';
+     echo '<a href="mailto:potus@whitehouse.gov">EMAIL THE PRESIDENT</a>';
     } elseif ($n == 97) {
-     echo '<a href="mailto:timbl@w3.org">SEND FAN MAIL TO THE CREATOR OF THE WORLD WIDE WEB</a>';
+     echo '<a href="http://en.letters.kremlin.ru/letters/send" target="_blank">FILE A LETTER OF COMPLAINT WITH THE KREMLIN</a>';
     } elseif ($n == 98) {
-     echo '<a href="https://github.com/virtualpress/codelit" target="_blank">VIEW SOURCE CODE</a>';
+     echo '<a href="mailto:timbl@w3.org">SEND FAN MAIL TO THE CREATOR OF THE WORLD WIDE WEB</a>';
     } else {
      echo '<a href="https://en.wikipedia.org/wiki/Special:Random">READ SOMETHING RANDOM ON WIKIPEDIA INSTEAD</a>';
     }
