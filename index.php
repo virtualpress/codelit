@@ -51,7 +51,7 @@
       echo $contents[$n]["title"];
       echo '</a><br>// <a href="';
       echo $contents[$n]["link"];
-      echo '" target="_blank" class="author">';
+      echo '" class="author">';
       echo $contents[$n]["author"];
       echo '</a></p>';
      } else {
@@ -65,7 +65,7 @@
      }
      array_splice($contents, $n, 1);
     }
-   ?><p class="contents keyboard"><a href="writers-block" class="title">WRITER'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" target="_blank" class="author">matthew baker</a></p><p class="contents"><?php
+   ?><p class="contents keyboard"><a href="writers-block" class="title">WRITER'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p><p class="contents"><?php
     $n = rand(0,99);
     if ($n < 64) {
      echo '<a href="about">ABOUT</a>';
@@ -76,25 +76,25 @@
     } elseif ($n < 86) {
      echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
     } elseif ($n < 88) {
-     echo '<a href="https://github.com/virtualpress/codelit" target="_blank">VIEW SOURCE CODE</a>';
+     echo '<a href="https://github.com/virtualpress/codelit">VIEW SOURCE CODE</a>';
     } elseif ($n < 90) {
-     echo '<a href="https://defcon.org" target="_blank">GO TO DEF CON</a>';
+     echo '<a href="https://defcon.org">GO TO DEF CON</a>';
     } elseif ($n == 90) {
-     echo '<a href="https://supporters.eff.org/donate/join-eff-4" target="_blank">DONATE TO THE ELECTRONIC FRONTIER FOUNDATION</a>';
+     echo '<a href="https://supporters.eff.org/donate/join-eff-4">DONATE TO THE ELECTRONIC FRONTIER FOUNDATION</a>';
     } elseif ($n == 91) {
-     echo '<a href="https://noyb.eu/en/donations-other-support-options" target="_blank">DONATE TO NOYB</a>';
+     echo '<a href="https://noyb.eu/en/donations-other-support-options">DONATE TO NOYB</a>';
     } elseif ($n == 92) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contribute" target="_blank">DONATE TO DDOSECRETS</a>';
+     echo '<a href="https://www.ddosecrets.com/wiki/Contribute">DONATE TO DDOSECRETS</a>';
     } elseif ($n == 93) {
-     echo '<a href="https://shop.wikileaks.org/donate" target="_blank">DONATE TO WIKILEAKS</a>';
+     echo '<a href="https://shop.wikileaks.org/donate">DONATE TO WIKILEAKS</a>';
     } elseif ($n == 94) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contact" target="_blank">SEND A CLASSIFIED DOC TO DDOSECRETS</a>';
+     echo '<a href="https://www.ddosecrets.com/wiki/Contact">SEND A CLASSIFIED DOC TO DDOSECRETS</a>';
     } elseif ($n == 95) {
-     echo '<a href="https://wikileaks.com/#submit" target="_blank">SEND A CLASSIFIED DOC TO WIKILEAKS</a>';
+     echo '<a href="https://wikileaks.com/#submit">SEND A CLASSIFIED DOC TO WIKILEAKS</a>';
     } elseif ($n == 96) {
      echo '<a href="mailto:potus@whitehouse.gov">EMAIL THE PRESIDENT</a>';
     } elseif ($n == 97) {
-     echo '<a href="http://en.letters.kremlin.ru/letters/send" target="_blank">FILE A LETTER OF COMPLAINT WITH THE KREMLIN</a>';
+     echo '<a href="http://en.letters.kremlin.ru/letters/send">FILE A LETTER OF COMPLAINT WITH THE KREMLIN</a>';
     } elseif ($n == 98) {
      echo '<a href="mailto:timbl@w3.org">SEND FAN MAIL TO THE CREATOR OF THE WORLD WIDE WEB</a>';
     } else {

@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">SO WHAT, I'M STILL THINKING ABOUT IT<br>// <a href="https://www.tfaizullah.com/" target="_blank" class="author">tarfia faizullah</a></p>
+   <p class="contents">SO WHAT, I'M STILL THINKING ABOUT IT<br>// <a href="https://www.tfaizullah.com/" class="author">tarfia faizullah</a></p>
    <div class="content">
     <p><span class="lit">I</span> <span class="lit">have</span> <span class="lit">only</span> <span class="lit">ever</span> <span class="lit">wanted</span></p>
     <p><span class="lit">what's</span> <span class="lit">bad</span> <span class="lit">for</span> <span class="lit">me:</span> <span class="lit">ice</span> <span class="lit">cream,</span></p>

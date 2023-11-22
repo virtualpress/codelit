@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">MIRROR WALKERS<br>// <a href="https://www.naheedphirozepatel.com/" target="_blank" class="author">naheed phiroze patel</a></p>
+   <p class="contents">MIRROR WALKERS<br>// <a href="https://www.naheedphirozepatel.com/" class="author">naheed phiroze patel</a></p>
    <div class="content">
     <div class="float">
      <div class="lit">

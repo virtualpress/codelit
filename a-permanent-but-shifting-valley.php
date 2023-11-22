@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">A PERMANENT BUT SHIFTING VALLEY<br>// <a href="https://sam-ross-4cah.squarespace.com/" target="_blank" class="author">sam ross</a></p>
+   <p class="contents">A PERMANENT BUT SHIFTING VALLEY<br>// <a href="https://sam-ross-4cah.squarespace.com/" class="author">sam ross</a></p>
    <div class="content">
     <p class="lit">Bruises appear</p>
     <p class="lit">In the morning, flattened plums<br>Under the skin.</p>

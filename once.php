@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">ONCE<br>// <a href="https://www.chadabushanab.com/" target="_blank" class="author">chad abushanab</a></p>
+   <p class="contents">ONCE<br>// <a href="https://www.chadabushanab.com/" class="author">chad abushanab</a></p>
    <div class="content">
     <p><span class="lit">it</span> <span class="lit">felt</span></p>
     <p><span class="lit">as</span> <span class="lit">though</span></p>

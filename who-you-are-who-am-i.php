@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">WHO YOU ARE, WHO AM I<br>// <a href="https://www.autumnhouse.org/our-authors/cundieff-melissa/" target="_blank" class="author">melissa cundieff</a></p>
+   <p class="contents">WHO YOU ARE, WHO AM I<br>// <a href="https://www.autumnhouse.org/our-authors/cundieff-melissa/" class="author">melissa cundieff</a></p>
    <div class="content">
     <div class="absolute">
     <p class="lit"><span class="third">The daughter worries the father</span></p>

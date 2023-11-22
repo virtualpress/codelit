@@ -191,7 +191,7 @@ input {
 
 @media (hover: hover) {
 
- a:hover {
+ a:hover, a:focus {
   opacity: 0.32;
  }
 

@@ -8,7 +8,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">CRIMINALITY<br>// <a href="https://umkalra.carrd.co" target="_blank" class="author">umang kalra</a></p>
+   <p class="contents">CRIMINALITY<br>// <a href="https://umkalra.carrd.co" class="author">umang kalra</a></p>
    <div class="content">
     <p class="lit" id="epigraph"><i>"It matters what you call a thing:" &mdash; Solmaz Sharif, LOOK</i></p>
    </div>

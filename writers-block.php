@@ -7,7 +7,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">WRITER'S BLOCK<br>// <a href="https://mwektaehtabr.com/" target="_blank" class="author">matthew baker</a></p>
+   <p class="contents">WRITER'S BLOCK<br>// <a href="https://mwektaehtabr.com/" class="author">matthew baker</a></p>
    <div class="content"><p id="lit"></p></div>
   <?php include "footer.php";?>
   <script src="writers-block.js"></script>

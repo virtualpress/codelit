@@ -7,7 +7,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">BETWEEN THE LINES<br>// <a href="https://www.kellyluce.com/" target="_blank" class="author">kelly luce</a></p>
+   <p class="contents">BETWEEN THE LINES<br>// <a href="https://www.kellyluce.com/" class="author">kelly luce</a></p>
    <div class="content" id="lit">
     <p class="lit"></p>
    </div>
