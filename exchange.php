@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>EXCHANGE // rosalie moffett</title>
   <?php include "meta.php";?>

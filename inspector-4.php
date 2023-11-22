@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>INSPECTOR 4 // michael martone</title>
   <?php include "meta.php";?>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>BETWEEN THE LINES // kelly luce</title>
   <?php include "meta.php";?>

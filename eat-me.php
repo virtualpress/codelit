@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>EAT ME (ALTERNATIVE SCENARIOS IN THE GARDEN OF EDEN) // allegra hyde</title>
   <?php include "meta.php";?>

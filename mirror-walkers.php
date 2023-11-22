@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>MIRROR WALKERS // naheed phiroze patel</title>
   <?php include "meta.php";?>

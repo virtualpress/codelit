@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS // rachel mennies</title>
   <?php include "meta.php";?>

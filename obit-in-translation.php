@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>OBIT, IN TRANSLATION // liwen xu</title>
   <?php include "meta.php";?>

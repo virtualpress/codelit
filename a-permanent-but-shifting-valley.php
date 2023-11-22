@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>A PERMANENT BUT SHIFTING VALLEY // sam ross</title>
   <?php include "meta.php";?>

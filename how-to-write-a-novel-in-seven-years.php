@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>HOW TO WRITE A NOVEL IN SEVEN YEARS // j marcelo borromeo</title>
   <?php include "meta.php";?>

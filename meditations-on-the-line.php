@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>MEDITATIONS ON THE LINE // tiana clark</title>
   <?php include "meta.php";?>

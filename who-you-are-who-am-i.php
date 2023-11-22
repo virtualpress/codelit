@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include "comment.php";?>
-<html>
+<html dir="ltr" lang="en">
  <head>
   <title>WHO YOU ARE, WHO AM I // melissa cundieff</title>
   <?php include "meta.php";?>
