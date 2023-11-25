@@ -1,5 +1,5 @@
 <div id="page">
-   <p class="header"><a href="/"><span id="sign"><?php
+   <p class="header"><a href="/" aria-label="code lit"><span id="sign"><?php
     switch (rand(0,3)) {
      case 0:
       echo '>';
