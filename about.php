@@ -7,7 +7,7 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <h2>ABOUT</p>
+   <h2>ABOUT</h2>
    <div class="content">
     <p>code lit is published by virtual press</p>
    </div>

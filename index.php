@@ -48,7 +48,7 @@
      echo $contents[$n]["page"];
      echo '" class="title">';
      echo $contents[$n]["title"];
-     echo '</a></h2><p class="byline">// '
+     echo '</a></h2><p class="byline">// ';
      if ($contents[$n]["link"] != "") {
       echo '<a href="';
       echo $contents[$n]["link"];

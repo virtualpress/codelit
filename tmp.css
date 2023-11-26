@@ -44,16 +44,16 @@ body {
  padding: 1em;
 }
 
-header {
- padding-top: 0em;
-}
-
 footer {
  padding-top: 1em;
 }
 
 h1, h2, p {
  font-size: 1em;
+}
+
+h2 {
+ padding-top: 2em;
 }
 
 p {
@@ -178,7 +178,7 @@ input {
   padding: 3em;
  }
 
- p {
+ h1, h2, p {
   font-size: 1.5em;
  }
 
