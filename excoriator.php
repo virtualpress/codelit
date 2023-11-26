@@ -8,7 +8,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">EXCORIATOR<br>// nick marshall</p>
+   <h2>EXCORIATOR</h2>
+   <p class="byline">// nick marshall</p>
    <div class="content">
     <p class="excoriator">EXCORIATOR</p><p>The Scab calls on a Thursday, says he has something to show <span class="lit">you</span>. When he says that he has not seen or spoken to anyone in weeks, you believe him. He tells you not to ask questions &mdash; just <span class="lit">drop everything and go</span>.</p>
    </div>

@@ -44,28 +44,27 @@
      if (sizeof($contents) > 16 && $n >= sizeof($contents) - 3) {
       $n = rand(0,7);
      }
+     echo '<h2><a href="';
+     echo $contents[$n]["page"];
+     echo '" class="title">';
+     echo $contents[$n]["title"];
+     echo '</a></h2><p class="byline">// '
      if ($contents[$n]["link"] != "") {
-      echo '<p class="contents"><a href="';
-      echo $contents[$n]["page"];
-      echo '" class="title">';
-      echo $contents[$n]["title"];
-      echo '</a><br>// <a href="';
+      echo '<a href="';
       echo $contents[$n]["link"];
       echo '" class="author">';
       echo $contents[$n]["author"];
-      echo '</a></p>';
+      echo '</a>';
      } else {
-      echo '<p class="contents"><a href="';
-      echo $contents[$n]["page"];
-      echo '" class="title">';
-      echo $contents[$n]["title"];
-      echo '</a><br>// ';
       echo $contents[$n]["author"];
-      echo '</p>';
      }
+     echo '</p>';
      array_splice($contents, $n, 1);
     }
-   ?><p class="contents keyboard"><a href="writers-block" class="title">WRITER'S BLOCK</a><br>// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p><p class="contents"><?php
+   ?><h2 class="keyboard"><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
+  </main>
+  <footer> 
+   <p><?php
     $n = rand(0,99);
     if ($n < 64) {
      echo '<a href="about">ABOUT</a>';
@@ -101,8 +100,9 @@
      echo '<a href="https://en.wikipedia.org/wiki/Special:Random">READ SOMETHING RANDOM ON WIKIPEDIA INSTEAD</a>';
     }
    ?></p>
-  <?php include "footer.php";?>
+  </footer>
+  <script src="code.js"></script>
   <div id="egg"></div>
-  <script src="sudo.js"></script>
+  <script src="localhost.js"></script>
  </body>
 </html>

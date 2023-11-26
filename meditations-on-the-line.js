@@ -76,5 +76,5 @@ while (i < 9999) {
 }
 
 function vanish() {
- none(document.getElementById("lit"));
+ none(document.querySelector("main"));
 }

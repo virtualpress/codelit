@@ -7,7 +7,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">THE EXTINCTION OF HOMO SAPIENS<br>// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
+   <h2>THE EXTINCTION OF HOMO SAPIENS</h2>
+   <p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
    <div class="content">
     <p id="lit">My number one priority in life is myself.</p>
    </div>

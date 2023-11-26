@@ -8,7 +8,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">ANOTHER THRILL<br>// <a href="https://www.anderscarlsonwee.com" class="author">anders carlson-wee</a></p>
+   <h2>ANOTHER THRILL</h2>
+   <p class="byline">// <a href="https://www.anderscarlsonwee.com" class="author">anders carlson-wee</a></p>
    <div class="content">
     <p id="words"></p>
     <p><span class="lit">Half</span> <span class="lit">the</span> <span class="lit">night</span> <span class="lit">trying</span> <span class="lit">to</span> <span class="lit">think</span></p>

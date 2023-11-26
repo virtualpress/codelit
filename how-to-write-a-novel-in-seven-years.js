@@ -85,7 +85,7 @@ function clicker() {
    rate = writing[section][paragraph][count];
    count++;
   } else {
-   document.getElementById("page").lastElementChild.lastElementChild.innerHTML += writing[section][paragraph][count];
+   document.querySelector("main").lastElementChild.lastElementChild.innerHTML += writing[section][paragraph][count];
    window.scrollTo(0, document.body.clientHeight);
    count++;
    if (count == writing[section][paragraph].length) {
@@ -94,9 +94,9 @@ function clicker() {
     if (paragraph == writing[section].length) {
      section++;
      paragraph = 0;
-     document.getElementById("page").innerHTML += '<div class="content"></div>';
+     document.querySelector("main").innerHTML += '<div class="content"></div>';
     }
-    document.getElementById("page").lastElementChild.innerHTML += "<p></p>";
+    document.querySelector("main").lastElementChild.innerHTML += "<p></p>";
    }
   }
   i++;

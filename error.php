@@ -7,7 +7,9 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents" id="error">PAGE NOT FOUND</p>
+   <div class="content">
+    <p id="error">PAGE NOT FOUND</p>
+   </div>
   <?php include "footer.php";?>
   <script src="error.js"></script>
  </body>

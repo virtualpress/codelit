@@ -7,8 +7,9 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">EPHEMERAL<br>// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
-   <div class="content" id="lit">
+   <h2>EPHEMERAL</h2>
+   <p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
+   <div id="lit">
    </div>
   <?php include "footer.php";?>
   <script src="ephemeral.js"></script>

@@ -8,7 +8,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">REVERBERATIONS<br>// <a href="https://sam-ross-4cah.squarespace.com/" class="author">sam ross</a></p>
+   <h2>REVERBERATIONS</h2>
+   <p class="byline">// <a href="https://sam-ross-4cah.squarespace.com/" class="author">sam ross</a></p>
    <div class="content">
     <p class="lit">I have three stone peaches<br>the color of pink pearls<br>in the light of a July morning.</p>
     <p class="lit">Each peach the weight<br>of a kitten. The feeling<br>of a pill's rising makes me turn</p>

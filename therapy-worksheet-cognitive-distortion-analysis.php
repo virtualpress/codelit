@@ -8,7 +8,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS<br>// <a href="https://www.rachelmennies.com/" class="author">rachel mennies</a></p>
+   <h2>THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS</h2>
+   <p class="byline">// <a href="https://www.rachelmennies.com/" class="author">rachel mennies</a></p>
    <div class="content">
     <div class="grid">
      <p class="place" ondragover="prepare(event)" ondrop="hold(event)">PLACE LIVED FEARS HERE</p>

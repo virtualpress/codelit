@@ -8,7 +8,8 @@
  </head>
  <body>
   <?php include "header.php";?>
-   <p class="contents">OBIT, IN TRANSLATION<br>// <a href="https://liwenxu.wixsite.com/website" class="author">liwen xu</a></p>
+   <h2>OBIT, IN TRANSLATION</h2>
+   <p class="byline">// <a href="https://liwenxu.wixsite.com/website" class="author">liwen xu</a></p>
    <div class="content">
     <p><em>after Victoria Chang</em></p>
    </div>

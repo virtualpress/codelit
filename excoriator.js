@@ -80,9 +80,9 @@ var excoriator = {
 
 function lit() {
  if (event.target.id.length > 0) {
-  document.getElementById("page").lastElementChild.innerHTML = excoriator[event.target.id.toUpperCase()];
+  document.querySelector("main").lastElementChild.innerHTML = excoriator[event.target.id.toUpperCase()];
  } else {
-  document.getElementById("page").lastElementChild.innerHTML = excoriator[event.target.innerHTML.toUpperCase()];
+  document.querySelector("main").lastElementChild.innerHTML = excoriator[event.target.innerHTML.toUpperCase()];
  }
  window.scrollTo(0, 0);
  for (var n = 0; n < document.body.getElementsByClassName("lit").length; n++) {

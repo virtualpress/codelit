@@ -42,7 +42,7 @@ function type() {
    setTimeout(untype, 8192);
    clearInterval(typer);
   } else {
-   document.getElementById("header").innerHTML += header.slice(0, 1);
+   document.getElementById("name").innerHTML += header.slice(0, 1);
    header = header.slice(1);
   }
  }
@@ -51,11 +51,11 @@ function type() {
 
 function untype() {
  function untyper() {
-  if (document.getElementById("header").innerHTML == "") {
+  if (document.getElementById("name").innerHTML == "") {
    setTimeout(type, 4096);
    clearInterval(untyper);
   } else {
-   document.getElementById("header").innerHTML = document.getElementById("header").innerHTML.slice(0, -1);
+   document.getElementById("name").innerHTML = document.getElementById("name").innerHTML.slice(0, -1);
   }
  }
  untyper = setInterval(untyper, 256);
@@ -65,7 +65,7 @@ setTimeout(type, 4096);
 
 function erase() {
  clearInterval(rainbow);
- none(document.getElementById("page"));
+ none(document.documentElement);
  document.getElementById("egg").innerHTML = "";
  opaque(document.body);
  document.body.style.background = "#ffffff";
