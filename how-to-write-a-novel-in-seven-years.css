@@ -1,13 +1,14 @@
-#page {
+main {
  padding-bottom: 0em;
 }
+
 .content {
  padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 768px) {
 
- #page {
+ main {
   padding-bottom: 0em;
  }
 

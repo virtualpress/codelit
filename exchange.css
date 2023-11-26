@@ -1,3 +1,7 @@
+main {
+ padding-bottom: 0em;
+}
+
 #lit {
  line-height: 2.3em;
  position: relative;
@@ -10,18 +14,14 @@
  transition-duration: .512s;
 }
 
-#page {
- padding-bottom: 0em;
-}
-
 @media only screen and (min-width: 768px) {
+
+ main {
+  padding-bottom: 1.5em;
+ }
 
  #lit {
   width: 50%;
- }
-
- #page {
-  padding-bottom: 1.5em;
  }
 
 }
