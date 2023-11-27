@@ -61,7 +61,7 @@
      echo '</p>';
      array_splice($contents, $n, 1);
     }
-   ?><h2 class="keyboard"><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
+   ?><div class="keyboard"><h2><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p></div>
   </main>
   <footer> 
    <p><?php

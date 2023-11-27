@@ -1,11 +1,7 @@
-main {
- padding-bottom: 0em;
-}
-
 #lit {
  line-height: 2.3em;
- position: relative;
- top: -.5em;
+ margin-top: -.5em;
+ margin-bottom: -.5em;
 }
 
 .lit{
@@ -15,10 +11,6 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-
- main {
-  padding-bottom: 1.5em;
- }
 
  #lit {
   width: 50%;

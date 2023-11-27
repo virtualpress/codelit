@@ -9,7 +9,7 @@
   <?php include "header.php";?>
    <h2>EPHEMERAL</h2>
    <p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p>
-   <div id="lit">
+   <div class="content" id="lit">
    </div>
   <?php include "footer.php";?>
   <script src="ephemeral.js"></script>

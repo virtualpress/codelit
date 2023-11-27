@@ -12,7 +12,7 @@
  src: url(/virtual-dark.ttf);
 }
 
-html, body, main, header, footer, div, span, h1, h2, p, a, i, em, b, ul, li, button, input {
+html, body, main, header, footer, div, span, h1, h2, h3, h4, p, a, i, em, b, ul, li, button, input {
  margin: 0;
  padding: 0;
  outline: 0;
@@ -48,7 +48,7 @@ footer {
  padding-top: 1em;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, p {
  font-size: 1em;
 }
 
@@ -178,7 +178,7 @@ input {
   padding: 3em;
  }
 
- h1, h2, p {
+ h1, h2, h3, h4, p {
   font-size: 1.5em;
  }
 
