@@ -130,6 +130,7 @@ video {
  transform: translate(-50%,-10%);
  opacity: 0.8;
  z-index: -1;
+ min-width: 150vw;
 }
 
 img {
@@ -137,18 +138,19 @@ img {
  top: 0;
  margin-left: 50vw;
  transform: translate(-50%);
- min-height: 100%;
  opacity: 0.8;
  z-index: -2;
 }
 
 img.small {
- min-height: 120%;
+ min-width: 110vw;
+ height: 120%;
  transform: translate(-50%,-10%);
 }
 
 img.large {
- min-height: 180%;
+ min-width: 170vw;
+ height: 180%;
  transform: translate(-50%,-20%);
 }
 
@@ -170,6 +172,8 @@ input {
 
 #egg {
  display: none;
+ position: absolute;
+ left: 0;
 }
 
 @media only screen and (min-width: 768px) {

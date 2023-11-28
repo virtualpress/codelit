@@ -144,7 +144,7 @@ document.addEventListener("keypress", function(event) {
   document.getElementById("egg").innerHTML = '<img class="small" src="egg/allyourbasearebelongtous.gif">';
  }
  if (egg.slice(-5) == "xyzzy") {
-  document.getElementById("egg").innerHTML = '<video preload="auto" height="140%" id="xyzzy"><source src="egg/xyzzy.mp4" type="video/mp4"></video>';
+  document.getElementById("egg").innerHTML = '<video preload="auto" id="xyzzy"><source src="egg/xyzzy.mp4" type="video/mp4"></video>';
   document.body.style.opacity = "0.9";
   block(document.getElementById("egg"));
   document.getElementById("xyzzy").play();
