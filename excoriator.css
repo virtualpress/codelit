@@ -2,13 +2,9 @@
  visibility: hidden;
 }
 
-.lit {
- color: black;
-}
-
 @media (hover: hover) {
 
- .lit:hover {
+ .a:hover {
   transition-duration: 0.256s;
   opacity: 0.32;
  }
