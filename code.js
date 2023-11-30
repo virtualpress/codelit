@@ -10,6 +10,7 @@ function rainbow() {
  color = "hsl(" + hue + ", 100%, 90%)";
  document.querySelectorAll("a").forEach((q) => q.style.color = color);
  document.querySelectorAll(".a").forEach((q) => q.style.backgroundColor = color);
+ document.querySelectorAll("input").forEach((q) => q.style.color = color);
  document.body.style.color = color;
  if (hue < 359) {
   hue++;
