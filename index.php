@@ -16,6 +16,7 @@
      array("page"=>"three-men-in-trouble", "title"=>"THREE MEN IN TROUBLE", "link"=>"https://lydia-conklin.com/", "author"=>"lydia conklin"),
      array("page"=>"romance-languages", "title"=>"ROMANCE LANGUAGES", "link"=>"https://kanakkapur.carrd.co/", "author"=>"kanak kapur"),
      array("page"=>"criminality", "title"=>"CRIMINALITY", "link"=>"https://umkalra.carrd.co", "author"=>"umang kalra"),
+     array("page"=>"you-are-on-the-fastest-route", "title"=>"YOU ARE ON THE FASTEST ROUTE", "link"=>"https://mayakanwal.com/", "author"=>"maya kanwal"),
      array("page"=>"excoriator", "title"=>"EXCORIATOR", "link"=>"", "author"=>"nick marshall"),
      array("page"=>"brain-map", "title"=>"BRAIN MAP", "link"=>"https://www.annevalente.com/", "author"=>"anne valente"),
      array("page"=>"poem-in-which-foreboding-again-figures-prominently", "title"=>"POEM IN WHICH FOREBODING AGAIN FIGURES PROMINENTLY", "link"=>"https://katemlucas.com/", "author"=>"kate lucas"),
