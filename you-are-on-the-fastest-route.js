@@ -1,29 +1,3 @@
-clearInterval(rainbow);
-
-function spectrum() {
- color = "hsl(" + hue + ", 100%, 90%)";
- var n = 0;
- var links = document.getElementsByTagName("a");
- while (n < links.length) {
-  links[n].style.color = color;
-  n++;
- }
- n = 0;
- var lit = document.getElementsByClassName("supplemental");
- while (n < lit.length) {
-  lit[n].style.backgroundColor = color;
-  n++;
- }
- document.body.style.color = color;
- if (hue != 359) {
-  hue++;
- } else {
-  hue = 0;
- }
-}
-
-spectrum = setInterval(spectrum, 32);
-
 var x = 0;
 
 var y = 0;
@@ -80,24 +54,24 @@ var supplements = ["Our pre-teens were all headed to college.", "Rumors that Mul
 function comment(n) {
  if (z == true) {
   hidden(document.getElementById("lit"));
-  text = document.getElementsByClassName("supplemental")[n].innerHTML;
-  document.getElementsByClassName("supplemental")[n].innerHTML = supplements[n];
-  visible(document.getElementsByClassName("supplemental")[n]);
+  text = document.getElementsByClassName("a")[n].innerHTML;
+  document.getElementsByClassName("a")[n].innerHTML = supplements[n];
+  visible(document.getElementsByClassName("a")[n]);
  }
 }
 
 function uncomment(n) {
  if (z == true) {
-  hidden(document.getElementsByClassName("supplemental")[n]);
-  document.getElementsByClassName("supplemental")[n].innerHTML = text;
-  document.getElementsByClassName("supplemental")[n].style.visibility = "inherit";
+  hidden(document.getElementsByClassName("a")[n]);
+  document.getElementsByClassName("a")[n].innerHTML = text;
+  document.getElementsByClassName("a")[n].style.visibility = "inherit";
   visible(document.getElementById("lit"));
  }
 }
 
 function supplement(n) {
  if (z == true) {
-  if (document.getElementsByClassName("supplemental")[n].innerHTML != supplements[n]) {
+  if (document.getElementsByClassName("a")[n].innerHTML != supplements[n]) {
    comment(n);
   } else {
    uncomment(n);
