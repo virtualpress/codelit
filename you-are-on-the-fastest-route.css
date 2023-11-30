@@ -1,0 +1,11 @@
+.intro,.outro,#story {
+ opacity: 0.0;
+}
+
+.intro,.outro {
+ white-space: pre-wrap;
+}
+
+.supplemental {
+ color: #000000;
+}
