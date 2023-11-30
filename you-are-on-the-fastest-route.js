@@ -95,7 +95,7 @@ function uncomment(n) {
  }
 }
 
-function init(n) {
+function supplement(n) {
  if (z == true) {
   if (document.getElementsByClassName("supplemental")[n].innerHTML != supplements[n]) {
    comment(n);
