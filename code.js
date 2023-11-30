@@ -8,14 +8,10 @@ var hue = random(359);
 
 function rainbow() {
  color = "hsl(" + hue + ", 100%, 90%)";
- var n = 0;
- var links = document.getElementsByTagName("a");
- while (n < links.length) {
-  links[n].style.color = color;
-  n++;
- }
+ document.querySelectorAll("a").forEach((q) => q.style.color = color);
+ document.querySelectorAll(".a").forEach((q) => q.style.backgroundColor = color);
  document.body.style.color = color;
- if (hue != 359) {
+ if (hue < 359) {
   hue++;
  } else {
   hue = 0;
