@@ -4,6 +4,7 @@
  <head>
   <title>WRITER'S BLOCK // matthew baker</title>
   <?php include "meta.php";?>
+  <link rel="stylesheet" type="text/css" href="writers-block.css">
  </head>
  <body>
   <?php include "header.php";?>

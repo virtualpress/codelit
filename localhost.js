@@ -95,6 +95,7 @@ var count = 0;
 
 document.addEventListener("keypress", function(event) {
  egg += event.key.toLowerCase();
+ egg = egg.replace(/ /, "");
  if (egg.slice(-4) == "2600") {
   opaque(document.body);
   none(document.getElementById("egg"));
