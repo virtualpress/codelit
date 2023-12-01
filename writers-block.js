@@ -18,10 +18,11 @@ document.addEventListener("keypress", function(event) {
    break;
   case "Enter":
    document.getElementById("lit").innerHTML += "<br>";
+   window.scrollTo(0,document.body.scrollHeight);
    break;
   case "Space":
    event.preventDefault();
-   document.getElementById("page").innerHTML += " ";
+   document.getElementById("lit").innerHTML += " ";
    break;   
   case "Backspace":
    event.preventDefault();
