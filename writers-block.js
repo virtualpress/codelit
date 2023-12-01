@@ -19,6 +19,10 @@ document.addEventListener("keypress", function(event) {
   case "Enter":
    document.getElementById("lit").innerHTML += "<br>";
    break;
+  case "Space":
+   event.preventDefault();
+   document.getElementById("page").innerHTML += " ";
+   break;   
   case "Backspace":
    event.preventDefault();
    break;

@@ -94,11 +94,7 @@ var egg = "";
 var count = 0;
 
 document.addEventListener("keypress", function(event) {
- if (event.code != "Space") {
-  egg += event.key.toLowerCase();
- } else {
-  event.preventDefault();
- }
+ egg += event.key.toLowerCase();
  if (egg.slice(-4) == "2600") {
   opaque(document.body);
   none(document.getElementById("egg"));
