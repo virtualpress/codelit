@@ -47,6 +47,17 @@ function outro() {
  }
 }
 
+function scrolls () {
+ if (window.innerHeight + window.pageYOffset > document.querySelector("#intro").offsetTop) {
+  intro();
+ }
+ if (window.innerHeight + window.pageYOffset > document.querySelector("#outro").offsetTop) {
+  outro();
+ }
+}
+ 
+setInterval(scrolls, 4000);
+
 var text = "";
 
 var supplements = ["Our pre-teens were all headed to college.", "Rumors that Muller's stepmother invested in NextToLast™ have been debunked, but there's more than one credible photo of the girl in early versions of the line, slouched in black lace on intersections frequented by highschoolers.", "NextToLast™ and their imitators discontinued their coffin lines and grandparents removed exhumation and coffin-endowments from their wills.", "Now fondly known as WiSfA, after which the WiSfA Act is named.", "And even went to jail for it?", "They were on their way to being dead.", "Given the expenses around their new pre-teen dormitories and toddler-friendly cafeterias.", "\"A slack hand causes poverty, but the hand of the diligent makes rich.\" - The Bible<br>\"Every morning we are born again. What we do today is what matters the most.\" - The Buddha<br>\"So where are you going?\" - The Quran", "And only mildly envious."];

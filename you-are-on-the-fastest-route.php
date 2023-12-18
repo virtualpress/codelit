@@ -11,7 +11,7 @@
    <h2>YOU ARE ON THE FASTEST ROUTE</h2>
    <p class="byline">// <a href="https://mayakanwal.com/" class="author">maya kanwal</a></p>
    <div id="lit">
-    <div class="content" onmouseenter="intro()" ontouchstart="intro()" onscroll="intro()">
+    <div class="content" onmouseenter="intro()" ontouchstart="intro()" onscroll="intro()" id="intro">
      <p class="intro">They say, in the early days,</p>
      <p class="intro">  paths emerged under the footfalls of human seekers,</p>
      <p class="intro">    widening into roads that swerved alongside streams</p>
@@ -44,7 +44,7 @@
      <p>Today, we finally woke to the vision of millions of our smallest children materializing onto college campuses. Cable news presenters breathlessly panned the streets for signs of kids; we stood in grocery store lines to buy the first physical newspaper of our lives, to cut out black and white photographs of small people with large bookbags winding through ivy-choked brick-walled alleys. Instagram was resplendent with shots of contemporary glass and steel student centers bursting with prepubescent newcomers; parenting-Twitter was a font of wisdom on cutting the apron strings. Facebook, though, was a <span class="a" onclick="supplement(7)">hot mess of tears and faith-based quotes</span> for parents who might be having second thoughts.</p>
      <p>Grandparents took screenshots of these sentiments and texted them to their progeny, because the progeny stopped being on Facebook decades ago. They were too busy preparing their funeral chests.</p>
     </div>
-    <div class="content" onmouseenter="outro()" ontouchstart="outro()" onscroll="outro()">
+    <div class="content" onmouseenter="outro()" ontouchstart="outro()" onscroll="outro()" id="outro">
      <p class="outro">  The truth is,</p>
      <p class="outro">    our forebears adopted</p>
      <p class="outro">      embalming fluid,</p>
