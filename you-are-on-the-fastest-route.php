@@ -61,7 +61,7 @@
      <p class="outro">  that their deaths</p>
      <p class="outro">  will be more welcomed</p>
      <p class="outro">  than ours; and for that</p>
-     <p class="outro">  we are grateful.</p>
+     <p class="outro">  <span class="a" onclick="supplement(8)">we are grateful.</a></p>
     </div>
    </div>
   <?php include "footer.php";?>
