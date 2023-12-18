@@ -22,6 +22,9 @@ function outros() {
  } else {
   setTimeout(story, 2000);
  }
+ if (y == document.getElementsByClassName("outro").length) {
+  z = true; 
+ }
 }
 
 function story() {
@@ -47,16 +50,9 @@ function outro() {
  }
 }
 
-function scrolls () {
- if (window.innerHeight + window.pageYOffset > document.querySelector("#intro").offsetTop) {
-  intro();
- }
- if (window.innerHeight + window.pageYOffset > document.querySelector("#outro").offsetTop) {
-  outro();
- }
-}
+setTimeout(intro, 4000);
  
-setInterval(scrolls, 2000);
+setInterval(() => {if (window.innerHeight + window.pageYOffset > document.querySelector("#outro").offsetTop) {outro();}}, 2000);
 
 var text = "";
 
