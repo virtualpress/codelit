@@ -10,7 +10,7 @@ function intros() {
   x++;
   setTimeout(intros, 2000);
  } else {
-  setTimeout(story, 4000);
+  setTimeout(story, 2000);
  }
 }
 
@@ -20,7 +20,7 @@ function outros() {
   y++;
   setTimeout(outros, 2000);
  } else {
-  setTimeout(story, 4000);
+  setTimeout(story, 2000);
  }
 }
 
@@ -56,7 +56,7 @@ function scrolls () {
  }
 }
  
-setInterval(scrolls, 4000);
+setInterval(scrolls, 2000);
 
 var text = "";
 
