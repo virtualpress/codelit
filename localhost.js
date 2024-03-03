@@ -73,20 +73,7 @@ function erase() {
 }
 
 function read() {
- var selection = document.getElementsByClassName("title")[random(document.getElementsByClassName("title").length)].innerHTML.toLowerCase();
- var url = "";
- var n = 0;
- while (n < selection.length) {
-  if (selection[n] == " " && selection[n + 1] == "(") {
-   n = selection.length;
-  } else if (selection[n] == " ") {
-   url += "-";
-  } else if (selection[n] != "," && selection[n] != "." && selection[n] != ":" && selection[n] != ";" && selection[n] != "!" && selection[n] != "?" && selection[n] != "'") {
-   url += selection[n];
-  }
-  n++;
- }
- window.location = url;
+ window.location = document.getElementsByClassName("title")[random(document.getElementsByClassName("title").length)].href;
 }
 
 var egg = "";

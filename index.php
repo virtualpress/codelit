@@ -15,9 +15,14 @@
      array("page"=>"discrepancies", "title"=>"DISCREPANCIES", "link"=>"https://mwektaehtabr.com/", "author"=>"matthew baker"),
      array("page"=>"three-men-in-trouble", "title"=>"THREE MEN IN TROUBLE", "link"=>"https://lydia-conklin.com/", "author"=>"lydia conklin"),
      array("page"=>"romance-languages", "title"=>"ROMANCE LANGUAGES", "link"=>"https://kanakkapur.carrd.co/", "author"=>"kanak kapur"),
-     array("page"=>"criminality", "title"=>"CRIMINALITY", "link"=>"https://umkalra.carrd.co", "author"=>"umang kalra"),
-     array("page"=>"excoriator", "title"=>"EXCORIATOR", "link"=>"", "author"=>"nick marshall"),
-     array("page"=>"you-are-on-the-fastest-route", "title"=>"YOU ARE ON THE FASTEST ROUTE", "link"=>"https://mayakanwal.com/", "author"=>"maya kanwal"),
+     array("page"=>"criminality", "title"=>"CRIMINALITY", "link"=>"https://umkalra.carrd.co/", "author"=>"umang kalra"),
+     array("page"=>"excoriator", "title"=>"EXCORIATOR", "author"=>"nick marshall"),
+     array("class"=>"keyboard", "page"=>"neon-raven", "title"=>"𓄿", "cowriters"=>
+      array(
+       array("link"=>"https://melissamesku.com/", "author"=>"melissa mesku"),
+       array("link"=>"https://kevinmaloney.net/", "author"=>"kevin maloney"),
+      )
+     ),
      array("page"=>"brain-map", "title"=>"BRAIN MAP", "link"=>"https://www.annevalente.com/", "author"=>"anne valente"),
      array("page"=>"poem-in-which-foreboding-again-figures-prominently", "title"=>"POEM IN WHICH FOREBODING AGAIN FIGURES PROMINENTLY", "link"=>"https://katemlucas.com/", "author"=>"kate lucas"),
      array("page"=>"how-to-write-a-novel-in-seven-years", "title"=>"HOW TO WRITE A NOVEL IN SEVEN YEARS", "link"=>"https://www.jmarceloborromeo.com/", "author"=>"j marcelo borromeo"),
@@ -33,6 +38,7 @@
      array("page"=>"another-thrill", "title"=>"ANOTHER THRILL", "link"=>"https://www.anderscarlsonwee.com", "author"=>"anders carlson-wee"),
      array("page"=>"inspector-4", "title"=>"INSPECTOR 4", "link"=>"https://www.fourforaquarter.com/", "author"=>"michael martone"),
      array("page"=>"exchange", "title"=>"EXCHANGE", "link"=>"https://www.rosaliemoffett.com/", "author"=>"rosalie moffett"),
+     array("page"=>"you-are-on-the-fastest-route", "title"=>"YOU ARE ON THE FASTEST ROUTE", "link"=>"https://mayakanwal.com/", "author"=>"maya kanwal"),
      array("page"=>"mirror-walkers", "title"=>"MIRROR WALKERS", "link"=>"https://www.naheedphirozepatel.com/", "author"=>"naheed phiroze patel"),
      array("page"=>"once", "title"=>"ONCE", "link"=>"https://www.chadabushanab.com/", "author"=>"chad abushanab"),
     );
@@ -45,21 +51,40 @@
      if (sizeof($contents) > 16 && $n >= sizeof($contents) - 3) {
       $n = rand(0,7);
      }
+     if ($contents[$n]["class"] != null) {
+      echo '<div class="';
+      echo $contents[$n]["class"];
+      echo '">';
+     }
      echo '<h2><a href="';
      echo $contents[$n]["page"];
      echo '" class="title">';
      echo $contents[$n]["title"];
      echo '</a></h2><p class="byline">// ';
-     if ($contents[$n]["link"] != "") {
+     if ($contents[$n]["link"] != null) {
       echo '<a href="';
       echo $contents[$n]["link"];
       echo '" class="author">';
       echo $contents[$n]["author"];
       echo '</a>';
-     } else {
+     } elseif ($contents[$n]["author"] != null) { 
       echo $contents[$n]["author"];
+     } elseif ($contents[$n]["cowriters"] != null) {
+      for ($x = 0; $x < sizeof($contents[$n]["cowriters"]); $x++) {
+       if ($x != 0) {
+        echo ' and ';
+       }
+       echo '<a href="';
+       echo $contents[$n]["cowriters"][$x]["link"];
+       echo '" class="author">';
+       echo $contents[$n]["cowriters"][$x]["author"];
+       echo '</a>';
+      }
      }
      echo '</p>';
+     if ($contents[$n]["class"] != null) {
+      echo '</div>';
+     }
      array_splice($contents, $n, 1);
     }
    ?><div class="keyboard"><h2><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p></div>
