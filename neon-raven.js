@@ -23,7 +23,6 @@ document.addEventListener("keypress", function(event) {
   default:
    break;
  }
-
  wordCounter++;
  if (wordCounter === wordArrayLength) { 
   wordCounter = 0;
