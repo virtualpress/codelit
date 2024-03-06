@@ -65,18 +65,6 @@ blink = setInterval(blink, 512);
 
 var touch = ("ontouchstart" in document.documentElement);
 
-function storage() {
- try {
-  localStorage.setItem("test", "test");
-  localStorage.removeItem("test");
-  return true;
- } catch (exception) {
-  return false;
- }
-}
-
-var storage = storage();
-
 document.addEventListener("keydown", function(event) {
  if (event.code == "ArrowLeft") {
    history.back();
