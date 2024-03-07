@@ -1,3 +1,5 @@
 .lit {
- opacity: 1.0;
+ opacity: 1;
+ transition-property: opacity;
+ transition-duration: .256s;
 }
