@@ -99,9 +99,9 @@
     } elseif ($n < 84) {
      echo '<a href="mailto:codelit@codelit.com">SUBMIT</a>';
     } elseif ($n < 86) {
-     echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
+     echo '<a href="https://www.patreon.com/c0d31i7">SUPPORT</a>';
     } elseif ($n < 88) {
-     echo '<a href="https://github.com/virtualpress/codelit">VIEW SOURCE CODE</a>';
+     echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
     } elseif ($n < 90) {
      echo '<a href="https://defcon.org">GO TO DEF CON</a>';
     } elseif ($n == 90) {
