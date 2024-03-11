@@ -12,22 +12,27 @@ var lines = [
  ['Now I AM A MAN hangs in a museum &mdash;', 'Tape billfold to snare drum to deaden the sound &mdash;', 'On-hold the whole world taps its toes to Al Jackson &mdash;', 'Like cinderblock walls built to reverberate sound,', 'Sweet tea &amp; pulled pork, diabetes &amp; pudding &mdash;', 'Glass pyramid mirroring the mud Mississippi,', 'Killing time redefined to murder a drummer,', 'On-hold the whole world taps its toes to Al Jackson,', 'I AM A MAN hanging in the museum,', 'The Lorraine Motel\'s where the soul songs were written,', 'This history taught as the skin of a snare,', 'To abandon a love &amp; a house for a song?', 'On-hold the whole world, where soul songs were written.', 'To abandon a love &amp; to deaden a drum?'],
  ['The stories grow taller &amp; stranger in Memphis.', 'you\'ll sweat through your sheets your first summer in Memphis.', 'slow midnight train whistling closer in Memphis.', 'Glass pyramid stands as a mirror in Memphis.', 'his backbeat eternal, the river in Memphis.', 'Glass pyramid the great muddy mirror in Memphis.', 'midnight train slow-whistling nearer in Memphis.', 'slow midnight train whistle cries closer in Memphis.', 'glass pyramid serves as a mirror in Memphis.', 'death still unsolved, another lover in Memphis?', 'a backbeat eternal, the river in Memphis.', 'world\'s biggest Bass Pro Shop to wander in Memphis.', 'slow midnight train\'s whistle cries closer in Memphis.', 'The rumor-mill burns like wildfire in Memphis.'],
  ['Would you pawn off a life &amp; a home for this song?', 'Once dreamt on Art\'s floor &amp; paid rent in tequila,', 'I once slept on Art\'s floor &amp; paid rent in tequila &mdash;', 'Sweet tea &amp; pulled pork, diabetes &amp; pudding &mdash;', 'Once slept on Art\'s floor &amp; paid rent in tequila,', 'Killing time redefined to murder a dreamer,', 'Like cinderblock walls built to reverberate sound,', 'Would you pawn off a life, pay rent in tequila?', 'Once pawned off a life, paid rent in tequila,', 'Would you pawn off a life to murder a dreamer?', 'Like cinderblock walls, to murder a drummer,', 'Once slept on Art\'s floor, a home for a song &mdash;', 'I pawned off my life to pay for this song &mdash;', 'Sweet tea &amp; pulled pork, three sides &amp; a song &mdash;'],
- ['The whispers of ghosts, "Reed don\'t linger in Memphis."', 'The rhythms of ghosts, "Reed don\'t linger in Memphis."', 'Read traces of ghosts, said "don\'t linger in Memphis."', 'Heard voices of ghosts, "Reed don\'t linger in Memphis."', 'Signs of the ghosts read "don\'t linger in Memphis."', 'The whispers of ghosts read "don\'t linger in Memphis."', 'Heard voices of signs, "Reed don\'t linger in Memphis."', 'The whispers of ghosts read "oh dreamer in Memphis."', 'The rhythms of ghosts read "a dreamer in Memphis."', 'Heard whispers of ghosts "Reed don\'t linger in Memphis."', 'The singing of ghosts, "Reed don\'t linger in Memphis."', 'The song of the ghosts, "Reed don\'t linger in Memphis."', 'To summon the ghosts, Reed don\'t linger in Memphis."', 'Oh rhythm, oh ghost, Reed don\'t linger in Memphis."']
+ ['The whispers of ghosts, "Reed don\'t linger in Memphis."', 'The rhythms of ghosts, "Reed don\'t linger in Memphis."', 'Read traces of ghosts, said "don\'t linger in Memphis."', 'Heard voices of ghosts, "Reed don\'t linger in Memphis."', 'Signs of the ghosts read "don\'t linger in Memphis."', 'The whispers of ghosts read "don\'t linger in Memphis."', 'Heard voices of signs, "Reed don\'t linger in Memphis."', 'The whispers of ghosts read "oh dreamer in Memphis."', 'The rhythms of ghosts read "a dreamer in Memphis."', 'Heard whispers of ghosts "Reed don\'t linger in Memphis."', 'The singing of ghosts, "Reed don\'t linger in Memphis."', 'The song of the ghosts, "Reed don\'t linger in Memphis."', 'To summon the ghosts, Reed don\'t linger in Memphis.', 'Oh rhythm, oh ghost, <em>Reed don\'t linger in Memphis</em>.']
  ];
 
 var line = 0;
 
 while (line < 14) {
  document.querySelectorAll(".lit")[line].innerHTML = lines[line][random(14)];
+ setTimeout(opaque, 4096 + 4096 * line, document.querySelectorAll(".lit")[line]);
+ setTimeout(variation, 4096 + 4096 * line, line - 1);
  line++;
 }
 
-function variation () {
- line = random(14);
+function variation (selection) {
+ if (selection) {
+  line = selection;
+ } else {
+  line = random(14);
+ }
  transparent(document.querySelectorAll(".lit")[line]);
  setTimeout(() => {document.querySelectorAll(".lit")[line].innerHTML = lines[line][random(14)]}, 512);
  setTimeout(opaque, 1024, document.querySelectorAll(".lit")[line]);
- setTimeout(variation, 4096 + random(16384));
 }
 
-setTimeout(variation, 16384 + random(16384));
+setTimeout(setInterval, 65536, variation, 4096);
