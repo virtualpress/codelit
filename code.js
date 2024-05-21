@@ -1,7 +1,7 @@
 console.log("hello world");
 
 function random(number) {
- return Math.floor((Math.random() * number));
+ return ~~((Math.random() * number));
 }
 
 var hue = random(359);

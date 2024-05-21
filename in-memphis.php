@@ -4,7 +4,6 @@
  <head>
   <title>IN MEMPHIS // reed turchi</title>
   <?php include "meta.php";?>
-  <link rel="stylesheet" type="text/css" href="in-memphis.css">
  </head>
  <body>
   <?php include "header.php";?>
