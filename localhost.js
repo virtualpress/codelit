@@ -1,4 +1,4 @@
-function namer() {
+function names() {
  var n = random(100);
  if (n < 64) {
   return "code lit";
@@ -35,33 +35,29 @@ function namer() {
  }
 }
 
-function type() {
- var header = namer();
- function typer() {
-  if (header == "") {
-   setTimeout(untype, 8192);
-   clearInterval(typer);
-  } else {
+function namer() {
+ var header = names();
+ types = setInterval(() => {
+  if (header != "") {
    document.getElementById("name").innerHTML += header.slice(0, 1);
    header = header.slice(1);
-  }
- }
- typer = setInterval(typer, 256);
-}
-
-function untype() {
- function untyper() {
-  if (document.getElementById("name").innerHTML == "") {
-   setTimeout(type, 4096);
-   clearInterval(untyper);
   } else {
-   document.getElementById("name").innerHTML = document.getElementById("name").innerHTML.slice(0, -1);
+   clearInterval(types);
+   setTimeout(() => {
+    untypes = setInterval(() => {
+     if (document.getElementById("name").innerHTML != "") {
+      document.getElementById("name").innerHTML = document.getElementById("name").innerHTML.slice(0, -1);
+     } else {
+      clearInterval(untypes);
+      setTimeout(namer, 4096);
+     }
+    }, 256);
+   }, 8192);
   }
- }
- untyper = setInterval(untyper, 256);
+ }, 256);
 }
 
-setTimeout(type, 4096);
+setTimeout(namer, 4096);
 
 function erase() {
  clearInterval(rainbow);
