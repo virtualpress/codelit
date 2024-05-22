@@ -60,11 +60,8 @@ function namer() {
 setTimeout(namer, 4096);
 
 function erase() {
- clearInterval(rainbow);
  none(document.documentElement);
  document.getElementById("egg").innerHTML = "";
- opaque(document.body);
- document.body.style.background = "#ffffff";
  document.title = "\u00A0";
 }
 
