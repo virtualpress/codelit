@@ -80,7 +80,7 @@ var egg = "";
 
 var count = 0;
 
-document.addEventListener("keypress", function(event) {
+document.addEventListener("keypress", event => {
  egg += event.key.toLowerCase();
  egg = egg.replace(/ /, "");
  if (egg.slice(-4) == "2600") {

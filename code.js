@@ -1,25 +1,19 @@
 console.log("hello world");
 
 function random(number) {
- return ~~((Math.random() * number));
+ return ~~(Math.random() * number);
 }
 
 var hue = random(359);
 
-function rainbow() {
+rainbow = setInterval(() => {
  color = "hsl(" + hue + ", 100%, 90%)";
- document.querySelectorAll("a").forEach((q) => q.style.color = color);
- document.querySelectorAll(".a").forEach((q) => q.style.backgroundColor = color);
- document.querySelectorAll("input").forEach((q) => q.style.color = color);
+ document.querySelectorAll("a").forEach(q => q.style.color = color);
+ document.querySelectorAll(".a").forEach(q => q.style.backgroundColor = color);
+ document.querySelectorAll("input").forEach(q => q.style.color = color);
  document.body.style.color = color;
- if (hue < 359) {
-  hue++;
- } else {
-  hue = 0;
- }
-}
-
-rainbow = setInterval(rainbow, 32);
+ hue < 359 ? hue++ : hue = 0;
+}, 32);
 
 function visible(element) {
  element.style.visibility = "visible";
@@ -51,25 +45,18 @@ function none(element) {
 
 var cursor;
 
-function blink() {
- if (cursor) {
-  hidden(document.getElementById("cursor"));
-  cursor = false;
- } else {
-  visible(document.getElementById("cursor"));
-  cursor = true;
- }
-}
-
-blink = setInterval(blink, 512);
+blink = setInterval(() => {
+ cursor ? hidden(document.getElementById("cursor")) : visible(document.getElementById("cursor"));
+ cursor = !cursor;
+}, 512);
 
 var touch = ("ontouchstart" in document.documentElement);
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", event => {
  if (event.code == "ArrowLeft") {
-   history.back();
+  history.back();
  }
  if (event.code == "ArrowRight") {
-   history.forward();
+  history.forward();
  }
 });
