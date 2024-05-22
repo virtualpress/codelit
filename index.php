@@ -90,42 +90,42 @@
    ?><div class="keyboard"><h2><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p></div>
   </main>
   <footer> 
-   <p><?php
+   <p><a <?php
     $n = rand(0,99);
     if ($n < 64) {
-     echo '<a href="about">ABOUT</a>';
+     echo 'href="about">ABOUT';
     } elseif ($n < 80) {
-     echo '<a onclick="erase();">DELETE WEBSITE</a>';
+     echo 'onclick="erase();">DELETE WEBSITE';
     } elseif ($n < 84) {
-     echo '<a href="mailto:codelit@codelit.com">SUBMIT</a>';
+     echo 'href="mailto:codelit@codelit.com">SUBMIT';
     } elseif ($n < 86) {
-     echo '<a href="https://www.patreon.com/c0d31i7">SUPPORT</a>';
+     echo 'href="https://www.patreon.com/c0d31i7">SUPPORT';
     } elseif ($n < 88) {
-     echo '<a onclick="read();">READ SOMETHING RANDOM</a>';
+     echo 'onclick="read();">READ SOMETHING RANDOM';
     } elseif ($n < 90) {
-     echo '<a href="https://defcon.org">GO TO DEF CON</a>';
+     echo 'href="https://defcon.org">GO TO DEF CON';
     } elseif ($n == 90) {
-     echo '<a href="https://supporters.eff.org/donate/join-eff-4">DONATE TO THE ELECTRONIC FRONTIER FOUNDATION</a>';
+     echo 'href="https://supporters.eff.org/donate/join-eff-4">DONATE TO THE ELECTRONIC FRONTIER FOUNDATION';
     } elseif ($n == 91) {
-     echo '<a href="https://noyb.eu/en/donations-other-support-options">DONATE TO NOYB</a>';
+     echo 'href="https://noyb.eu/en/donations-other-support-options">DONATE TO NOYB';
     } elseif ($n == 92) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contribute">DONATE TO DDOSECRETS</a>';
+     echo 'href="https://www.ddosecrets.com/wiki/Contribute">DONATE TO DDOSECRETS';
     } elseif ($n == 93) {
-     echo '<a href="https://shop.wikileaks.org/donate">DONATE TO WIKILEAKS</a>';
+     echo 'href="https://shop.wikileaks.org/donate">DONATE TO WIKILEAKS';
     } elseif ($n == 94) {
-     echo '<a href="https://www.ddosecrets.com/wiki/Contact">SEND A CLASSIFIED DOC TO DDOSECRETS</a>';
+     echo 'href="https://www.ddosecrets.com/wiki/Contact">SEND A CLASSIFIED DOC TO DDOSECRETS';
     } elseif ($n == 95) {
-     echo '<a href="https://wikileaks.com/#submit">SEND A CLASSIFIED DOC TO WIKILEAKS</a>';
+     echo 'href="https://wikileaks.com/#submit">SEND A CLASSIFIED DOC TO WIKILEAKS';
     } elseif ($n == 96) {
-     echo '<a href="mailto:potus@whitehouse.gov">EMAIL THE PRESIDENT</a>';
+     echo 'href="mailto:potus@whitehouse.gov">EMAIL THE PRESIDENT';
     } elseif ($n == 97) {
-     echo '<a href="http://en.letters.kremlin.ru/letters/send">FILE A LETTER OF COMPLAINT WITH THE KREMLIN</a>';
+     echo 'href="http://en.letters.kremlin.ru/letters/send">FILE A LETTER OF COMPLAINT WITH THE KREMLIN';
     } elseif ($n == 98) {
-     echo '<a href="mailto:timbl@w3.org">SEND FAN MAIL TO THE CREATOR OF THE WORLD WIDE WEB</a>';
+     echo 'href="mailto:timbl@w3.org">SEND FAN MAIL TO THE CREATOR OF THE WORLD WIDE WEB';
     } else {
-     echo '<a href="https://en.wikipedia.org/wiki/Special:Random">READ SOMETHING RANDOM ON WIKIPEDIA INSTEAD</a>';
+     echo 'href="https://en.wikipedia.org/wiki/Special:Random">READ SOMETHING RANDOM ON WIKIPEDIA INSTEAD';
     }
-   ?></p>
+   ?></a></p>
   </footer>
   <script src="code.js"></script>
   <div id="egg"></div>
