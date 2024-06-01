@@ -1,5 +1,4 @@
-function names() {
- var n = random(100);
+names = (n = random(100)) => {
  if (n < 64) {
   return "code lit";
  } else if (n < 80) {
@@ -35,8 +34,7 @@ function names() {
  }
 }
 
-function namer() {
- var header = names();
+namer = (header = names()) => {
  types = setInterval(() => {
   if (header != "") {
    document.getElementById("name").innerHTML += header.slice(0, 1);
@@ -59,13 +57,13 @@ function namer() {
 
 setTimeout(namer, 4096);
 
-function erase() {
+erase = () => {
  none(document.documentElement);
  document.getElementById("egg").innerHTML = "";
  document.title = "\u00A0";
 }
 
-function read() {
+read = () => {
  window.location = document.getElementsByClassName("title")[random(document.getElementsByClassName("title").length)].href;
 }
 

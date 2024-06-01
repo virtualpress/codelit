@@ -1,45 +1,43 @@
 console.log("hello world");
 
-function random(number) {
+random = number => {
  return ~~(Math.random() * number);
 }
 
-var hue = random(359);
-
-rainbow = setInterval(() => {
+(rainbow = () => {
  color = "hsl(" + hue + ", 100%, 90%)";
- document.querySelectorAll("a").forEach(q => q.style.color = color);
- document.querySelectorAll(".a").forEach(q => q.style.backgroundColor = color);
- document.querySelectorAll("input").forEach(q => q.style.color = color);
+ document.querySelectorAll("a").forEach(element => element.style.color = color);
+ document.querySelectorAll(".a").forEach(element => element.style.backgroundColor = color);
+ document.querySelectorAll("input").forEach(element => element.style.color = color);
  document.body.style.color = color;
  hue < 359 ? hue++ : hue = 0;
-}, 32);
+})(hue = random(359), setInterval(rainbow, 32));
 
-function visible(element) {
+visible = element => {
  element.style.visibility = "visible";
 }
 
-function hidden(element) {
+hidden = element => {
  element.style.visibility = "hidden";
 }
 
-function opaque(element) {
+opaque = element => {
  element.style.opacity = 1.0;
 }
 
-function transparent(element) {
+transparent = element => {
  element.style.opacity = 0;
 }
 
-function block(element) {
+block = element => {
  element.style.display = "block";
 }
 
-function inline(element) {
+inline = element => {
  element.style.display = "inline";
 }
 
-function none(element) {
+none = element => {
  element.style.display = "none";
 }
 
