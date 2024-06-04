@@ -67,9 +67,9 @@ read = () => {
  window.location = document.getElementsByClassName("title")[random(document.getElementsByClassName("title").length)].href;
 }
 
-var egg = "";
+var boolean;
 
-var count = 0;
+var egg = "";
 
 document.addEventListener("keypress", event => {
  egg += event.key.toLowerCase();
@@ -77,13 +77,8 @@ document.addEventListener("keypress", event => {
  if (egg.slice(-4) == "2600") {
   opaque(document.body);
   none(document.getElementById("egg"));
-  if (count == 0) {
-   document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="egg/2600-1.mp3" type="audio/mpeg"></audio>';
-   count++;
-  } else {
-   document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="egg/2600-2.mp3" type="audio/mpeg"></audio>';
-   count--;
-  }
+  boolean = !boolean;
+  boolean ? document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="egg/2600-1.mp3" type="audio/mpeg"></audio>' : document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="egg/2600-2.mp3" type="audio/mpeg"></audio>';
   document.getElementById("2600").play();
   document.getElementById("2600").volume = 0.2;
  }
