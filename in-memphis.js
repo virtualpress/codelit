@@ -35,7 +35,7 @@ types = (l, t) => {
   if (t.length > 0) {
    types(l, t);
   } else {
-   untypes(l);
+   setTimeout(untypes, 512 + random(4096), l);
   }
  }, 32 + random(256));
 }
@@ -55,7 +55,7 @@ untypes = l => {
    untypes(l);
   } else {
    types(l, lines[l][random(lines[l].length)]);
-   if (line < lines.length - 1) {
+   if (l == line && line < lines.length - 1) {
     line++;
     types(line, lines[line][random(lines[line].length)]);
    }
