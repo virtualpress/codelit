@@ -1,5 +1,3 @@
-.lit {
- opacity: 0;
- transition-property: opacity;
- transition-duration: .256s;
+.lit::after {
+ content: "\00a0"
 }
