@@ -35,7 +35,7 @@ types = (l, t) => {
   if (t.length > 0) {
    types(l, t);
   } else {
-   setTimeout(untypes, 512 + random(4096), l);
+   setTimeout(untypes, 1024 + random(8192), l);
   }
  }, 32 + random(128));
 }
