@@ -17,12 +17,7 @@
      array("page"=>"romance-languages", "title"=>"ROMANCE LANGUAGES", "link"=>"https://kanakkapur.carrd.co/", "author"=>"kanak kapur"),
      array("page"=>"criminality", "title"=>"CRIMINALITY", "link"=>"https://umkalra.carrd.co/", "author"=>"umang kalra"),
      array("page"=>"excoriator", "title"=>"EXCORIATOR", "author"=>"nick marshall"),
-     array("class"=>"keyboard", "page"=>"neon-raven", "title"=>"𓄿", "cowriters"=>
-      array(
-       array("link"=>"https://melissamesku.com/", "author"=>"melissa mesku"),
-       array("link"=>"https://kevinmaloney.net/", "author"=>"kevin maloney"),
-      )
-     ),
+     array("page"=>"in-memphis", "title"=>"IN MEMPHIS", "link"=>"https://www.reedturchi.com/", "author"=>"reed turchi"),
      array("page"=>"brain-map", "title"=>"BRAIN MAP", "link"=>"https://www.annevalente.com/", "author"=>"anne valente"),
      array("page"=>"poem-in-which-foreboding-again-figures-prominently", "title"=>"POEM IN WHICH FOREBODING AGAIN FIGURES PROMINENTLY", "link"=>"https://katemlucas.com/", "author"=>"kate lucas"),
      array("page"=>"how-to-write-a-novel-in-seven-years", "title"=>"HOW TO WRITE A NOVEL IN SEVEN YEARS", "link"=>"https://www.jmarceloborromeo.com/", "author"=>"j marcelo borromeo"),
@@ -31,6 +26,12 @@
      array("page"=>"eat-me", "title"=>"EAT ME (ALTERNATIVE SCENARIOS IN THE GARDEN OF EDEN)", "link"=>"https://www.allegrahyde.com/", "author"=>"allegra hyde"),
      array("page"=>"frame-of-reference", "title"=>"FRAME OF REFERENCE", "link"=>"https://www.simonhan.com/", "author"=>"simon han"),
      array("page"=>"who-you-are-who-am-i", "title"=>"WHO YOU ARE, WHO AM I", "link"=>"https://www.autumnhouse.org/our-authors/cundieff-melissa/", "author"=>"melissa cundieff"),
+     array("class"=>"keyboard", "page"=>"neon-raven", "title"=>"𓄿", "cowriters"=>
+      array(
+       array("link"=>"https://melissamesku.com/", "author"=>"melissa mesku"),
+       array("link"=>"https://kevinmaloney.net/", "author"=>"kevin maloney"),
+      )
+     ),
      array("page"=>"therapy-worksheet-cognitive-distortion-analysis", "title"=>"THERAPY WORKSHEET: COGNITIVE DISTORTION ANALYSIS", "link"=>"https://www.rachelmennies.com/", "author"=>"rachel mennies"),
      array("page"=>"a-permanent-but-shifting-valley", "title"=>"A PERMANENT BUT SHIFTING VALLEY", "link"=>"https://sam-ross-4cah.squarespace.com/", "author"=>"sam ross"),
       array("page"=>"reverberations", "title"=>"REVERBERATIONS", "link"=>"https://sam-ross-4cah.squarespace.com/", "author"=>"sam ross"),
