@@ -57,7 +57,7 @@
       echo $contents[$n]["class"];
       echo '">';
      }
-     echo '<h2><a href="';
+     echo '<h2><a href="/';
      echo $contents[$n]["page"];
      echo '" class="title">';
      echo $contents[$n]["title"];
@@ -88,13 +88,13 @@
      }
      array_splice($contents, $n, 1);
     }
-   ?><div class="keyboard"><h2><a href="writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p></div>
+   ?><div class="keyboard"><h2><a href="/writers-block" class="title">WRITER'S BLOCK</a></h2><p class="byline">// <a href="https://mwektaehtabr.com" class="author">matthew baker</a></p></div>
   </main>
   <footer> 
    <p><a <?php
     $n = rand(0,99);
     if ($n < 64) {
-     echo 'href="about">ABOUT';
+     echo 'href="/about">ABOUT';
     } elseif ($n < 80) {
      echo 'onclick="erase();">DELETE WEBSITE';
     } elseif ($n < 84) {
@@ -128,8 +128,8 @@
     }
    ?></a></p>
   </footer>
-  <script src="code.js"></script>
+  <script src="/code.js"></script>
   <div id="egg"></div>
-  <script src="localhost.js"></script>
+  <script src="/localhost.js"></script>
  </body>
 </html>

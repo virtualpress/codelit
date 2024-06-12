@@ -1,2 +1,2 @@
 </main>
-  <script src="code.js"></script>
+  <script src="/code.js"></script>

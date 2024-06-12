@@ -43,4 +43,4 @@
     echo "root";
   }
 ?>.jpg" />
-  <link rel="stylesheet" type="text/css" href="code.css">
+  <link rel="stylesheet" type="text/css" href="/code.css">

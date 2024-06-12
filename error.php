@@ -11,6 +11,6 @@
     <p id="error">PAGE NOT FOUND</p>
    </div>
   <?php include "footer.php";?>
-  <script src="error.js"></script>
+  <script src="/error.js"></script>
  </body>
 </html>
