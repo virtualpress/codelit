@@ -2,14 +2,7 @@
 
 @font-face {
  font-family: Virtual;
- font-weight: normal;
- src: url(/virtual-light.ttf);
-}
-
-@font-face {
- font-family: Virtual;
- font-weight: bold;
- src: url(/virtual-dark.ttf);
+ src: url(/virtual.ttf);
 }
 
 html, body, main, header, footer, div, span, h1, h2, h3, h4, p, a, i, em, b, ul, li, button, input {
@@ -30,7 +23,7 @@ html, body, main, header, footer, div, span, h1, h2, h3, h4, p, a, i, em, b, ul,
 
 html, body {
  font-family: Virtual, monospace;
- font-weight: bold;
+ font-weight: normal;
  font-size: 16px;
  color: #ffffff;
  background: #000000;
