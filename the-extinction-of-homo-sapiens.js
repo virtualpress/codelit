@@ -1,20 +1,17 @@
-var counter = 0;
+var x = "My number one priority in life is ";
 
-var statement = "My number one priority in life is ";
+var y = "that my number one priority in life is ";
 
-var extension = "that my number one priority in life is ";
+var _ = ["myself.", "my family.", "my friends.", "my work.", "my religion.", "my politics.", "my country.", "the planet."];
 
-var priorities = ["myself.", "my family.", "my friends.", "my work.", "my religion.", "my politics.", "my country.", "the planet."];
+var $ = 0;
 
-function extinction() {
- if (counter < priorities.length) {
-  document.getElementById("lit").innerHTML = statement + priorities[counter];
-  counter++;
+setInterval(() => {
+ if ($ < _.length) {
+  document.querySelector("#lit").innerHTML = x + _[$++];
  } else {
-  document.getElementById("lit").innerHTML = statement + extension + priorities[0];
-  statement += extension;
-  counter = 0;
+  document.querySelector("#lit").innerHTML = x + y + _[0];
+  x += y;
+  $ = 0;
  }
-}
-
-setInterval(extinction, 2048);
+}, 2048);

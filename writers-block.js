@@ -1,19 +1,19 @@
-document.addEventListener("keypress", function(event) {
- switch(event.code) {
+document.addEventListener("keypress", e => {
+ switch(e.code) {
   case "Quote":
-   if (!event.shiftKey) {
-    event.preventDefault();
+   if (!e.shiftKey) {
+    e.preventDefault();
     document.getElementById("lit").innerHTML += "'";
    } else {
-    document.getElementById("lit").innerHTML += event.key;
+    document.getElementById("lit").innerHTML += e.key;
    }
    break;
   case "Slash":
-   if (!event.shiftKey) {
-    event.preventDefault();
+   if (!e.shiftKey) {
+    e.preventDefault();
     document.getElementById("lit").innerHTML += "/";
    } else {
-    document.getElementById("lit").innerHTML += event.key;
+    document.getElementById("lit").innerHTML += e.key;
    }
    break;
   case "Enter":
@@ -21,13 +21,13 @@ document.addEventListener("keypress", function(event) {
    window.scrollTo(0,document.body.scrollHeight);
    break;
   case "Space":
-   event.preventDefault();
+   e.preventDefault();
    document.getElementById("lit").innerHTML += " ";
    break;   
   case "Backspace":
-   event.preventDefault();
+   e.preventDefault();
    break;
   default:
-   document.getElementById("lit").innerHTML += event.key;
+   document.getElementById("lit").innerHTML += e.key;
  }
 });
