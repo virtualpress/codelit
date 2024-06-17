@@ -12,7 +12,7 @@ var s = (() => {
  }
 })();
 
-read = n => {
+r = n => {
  var t = 0;
  [..._.keys()].forEach(e => {
   setTimeout(() => {
@@ -34,7 +34,7 @@ if (s) {
  if (localStorage.n == undefined) {
   localStorage.n = 0;
  }
- read(Number(localStorage.n));
+ r(Number(localStorage.n));
 } else {
- read(0);
+ r(0);
 }
