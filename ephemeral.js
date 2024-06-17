@@ -4,37 +4,37 @@ var $ = [[16, 32, 32, 64, 16, 32, 16, 64, 16, 32, 64, 8, 8, 8, 8, 64], [8, 16, 1
 
 var s = (() => {
  try {
-  localStorage.setItem("_", "_");
-  localStorage.removeItem("_");
+  localStorage.setItem("i", "i");
+  localStorage.removeItem("i");
   return true;
  } catch(e) {
   return false;
  }
 })();
 
-r = n => {
- var t = 0;
- [..._.keys()].forEach(e => {
-  setTimeout(() => {
-   document.querySelector("#lit").innerHTML = _[e];
-  }, t += 2000);
-  setTimeout(() => {
-   document.querySelector("#lit").innerHTML = "";
-   window.scrollTo(0, 0);
-  }, t += ($[Number(n) % 4][e] * 1000));
- });
- setTimeout(() => {
-  if (s) {
-   localStorage.n = Number(localStorage.n) + 1;
-  }
- }, t);
-}
-
 if (s) {
  if (localStorage.n == undefined) {
   localStorage.n = 0;
  }
- r(Number(localStorage.n));
+ var n = Number(localStorage.n);
 } else {
- r(0);
+ var n = 0;
 }
+
+var t = 0;
+
+[..._.keys()].forEach(e => {
+ setTimeout(() => {
+  document.querySelector("#lit").innerHTML = _[e];
+ }, t += 2000);
+ setTimeout(() => {
+  document.querySelector("#lit").innerHTML = "";
+  window.scrollTo(0, 0);
+ }, t += ($[Number(n) % 4][e] * 1000));
+});
+
+setTimeout(() => {
+ if (s) {
+  localStorage.n = Number(localStorage.n) + 1;
+ }
+}, t);
