@@ -8,7 +8,7 @@ var hue = random(359);
 
 setInterval(() => {
  color = "hsl(" + hue + ", 100%, 90%)";
- document.querySelectorAll("body", "a", "input").forEach(element => element.style.color = color);
+ document.querySelectorAll("body, a, input").forEach(element => element.style.color = color);
  document.querySelectorAll(".a").forEach(element => element.style.backgroundColor = color);
  hue < 359 ? hue++ : hue = 0;
 }, 32);
