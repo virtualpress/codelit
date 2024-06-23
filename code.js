@@ -4,14 +4,14 @@ random = number => {
  return ~~(Math.random() * number);
 }
 
-(rainbow = () => {
+var hue = random(359);
+
+setInterval(() => {
  color = "hsl(" + hue + ", 100%, 90%)";
- document.querySelectorAll("a").forEach(element => element.style.color = color);
+ document.querySelectorAll("body", "a", "input").forEach(element => element.style.color = color);
  document.querySelectorAll(".a").forEach(element => element.style.backgroundColor = color);
- document.querySelectorAll("input").forEach(element => element.style.color = color);
- document.body.style.color = color;
  hue < 359 ? hue++ : hue = 0;
-})(hue = random(359), setInterval(rainbow, 32));
+}, 32);
 
 visible = element => {
  element.style.visibility = "visible";
@@ -43,7 +43,7 @@ none = element => {
 
 var cursor;
 
-blink = setInterval(() => {
+setInterval(() => {
  cursor ? hidden(document.getElementById("cursor")) : visible(document.getElementById("cursor"));
  cursor = !cursor;
 }, 512);
