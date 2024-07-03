@@ -4,7 +4,7 @@ random = number => {
  return ~~(Math.random() * number);
 }
 
-var hue = random(359);
+var hue = random(360);
 
 setInterval(() => {
  color = "hsl(" + hue + ", 100%, 90%)";
