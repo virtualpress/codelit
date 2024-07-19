@@ -14,7 +14,7 @@
      array("page"=>"obit-in-translation", "title"=>"OBIT, IN TRANSLATION", "link"=>"https://liwenxu.wixsite.com/website", "author"=>"liwen xu"),
      array("page"=>"discrepancies", "title"=>"DISCREPANCIES", "link"=>"https://mwektaehtabr.com/", "author"=>"matthew baker"),
      array("page"=>"three-men-in-trouble", "title"=>"THREE MEN IN TROUBLE", "link"=>"https://lydia-conklin.com/", "author"=>"lydia conklin"),
-     array("page"=>"romance-languages", "title"=>"ROMANCE LANGUAGES", "link"=>"https://kanakkapur.carrd.co/", "author"=>"kanak kapur"),
+     array("page"=>"romance-languages", "title"=>"ROMANCE LANGUAGES", "author"=>"kanak kapur"),
      array("page"=>"criminality", "title"=>"CRIMINALITY", "link"=>"https://umkalra.carrd.co/", "author"=>"umang kalra"),
      array("page"=>"excoriator", "title"=>"EXCORIATOR", "author"=>"nick marshall"),
      array("page"=>"in-memphis", "title"=>"IN MEMPHIS", "link"=>"https://www.reedturchi.com/", "author"=>"reed turchi"),
@@ -41,7 +41,7 @@
      array("page"=>"exchange", "title"=>"EXCHANGE", "link"=>"https://www.rosaliemoffett.com/", "author"=>"rosalie moffett"),
      array("page"=>"you-are-on-the-fastest-route", "title"=>"YOU ARE ON THE FASTEST ROUTE", "link"=>"https://mayakanwal.com/", "author"=>"maya kanwal"),
      array("page"=>"mirror-walkers", "title"=>"MIRROR WALKERS", "link"=>"https://www.naheedphirozepatel.com/", "author"=>"naheed phiroze patel"),
-     array("page"=>"once", "title"=>"ONCE", "link"=>"https://www.chadabushanab.com/", "author"=>"chad abushanab"),
+     array("page"=>"once", "title"=>"ONCE", "author"=>"chad abushanab"),
     );
     while (sizeof($contents) > 0) {
      if (rand(0,7) == 0) {
