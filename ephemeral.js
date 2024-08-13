@@ -23,14 +23,14 @@ if (s) {
 
 var t = 0;
 
-[..._.keys()].forEach(e => {
+_.forEach((e, i) => {
  setTimeout(() => {
-  document.querySelector("#lit").innerHTML = _[e];
+  document.querySelector("#lit").innerHTML = e;
  }, t += 2000);
  setTimeout(() => {
   document.querySelector("#lit").innerHTML = "";
   window.scrollTo(0, 0);
- }, t += ($[Number(n) % 4][e] * 1000));
+ }, t += ($[Number(n) % 4][i] * 1000));
 });
 
 setTimeout(() => {
