@@ -89,12 +89,12 @@ document.addEventListener("keypress", event => {
   document.getElementById("3301").play();
   document.getElementById("3301").volume = 0.2;
  }
- if (egg.slice(-4) == "1337" || egg.slice(-5) == "31337") {
+ if (egg.slice(-4) == "1337") {
   opaque(document.body);
   none(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="1337-31337"><source src="/egg/1337-31337.mp3" type="audio/mpeg"></audio>';
-  document.getElementById("1337-31337").play();
-  document.getElementById("1337-31337").volume = 0.2;
+  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="1337"><source src="/egg/1337.mp3" type="audio/mpeg"></audio>';
+  document.getElementById("1337").play();
+  document.getElementById("1337").volume = 0.2;
  }
  if (egg.slice(-5) == "0x539") {
   document.body.style.opacity = "0.9";
@@ -114,6 +114,6 @@ document.addEventListener("keypress", event => {
   document.getElementById("xyzzy").volume = 0.2;
  }
  if (egg.length > 64) {
-  egg = egg.slice(-32);
+  egg = egg.slice(-8);
  }
 });
