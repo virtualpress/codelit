@@ -78,7 +78,7 @@ document.addEventListener("keypress", event => {
   opaque(document.body);
   none(document.getElementById("egg"));
   boolean = !boolean;
-  boolean ? document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="/egg/2600-1.mp3" type="audio/mpeg"></audio>' : document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="/egg/2600-2.mp3" type="audio/mpeg"></audio>';
+  boolean ? document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="/egg/2600-0.mp3" type="audio/mpeg"></audio>' : document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="2600"><source src="/egg/2600-1.mp3" type="audio/mpeg"></audio>';
   document.getElementById("2600").play();
   document.getElementById("2600").volume = 0.2;
  }
@@ -87,31 +87,24 @@ document.addEventListener("keypress", event => {
   none(document.getElementById("egg"));
   document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="3301"><source src="/egg/3301.mp3" type="audio/mpeg"></audio>';
   document.getElementById("3301").play();
-  document.getElementById("3301").volume = 0.4;
+  document.getElementById("3301").volume = 0.2;
  }
- if (egg.slice(-7) == "deadcow") {
+ if (egg.slice(-4) == "1337" || egg.slice(-5) == "31337") {
   opaque(document.body);
   none(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="deadcow"><source src="/egg/deadcow.mp3" type="audio/mpeg"></audio>';
-  document.getElementById("deadcow").play();
-  document.getElementById("deadcow").volume = 0.4;
+  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="1337-31337"><source src="/egg/1337-31337.mp3" type="audio/mpeg"></audio>';
+  document.getElementById("1337-31337").play();
+  document.getElementById("1337-31337").volume = 0.2;
  }
- if (egg.slice(-14) == "enterthematrix") {
-  opaque(document.body);
-  none(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<audio controls preload="auto" id="enterthematrix"><source src="/egg/enterthematrix.mp3" type="audio/mpeg"></audio>';
-  document.getElementById("enterthematrix").play();
-  document.getElementById("enterthematrix").volume = 0.4;
- }
- if (egg.slice(-11) == "wearelegion") {
+ if (egg.slice(-5) == "0x539") {
   document.body.style.opacity = "0.9";
   block(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<img class="large" src="/egg/wearelegion.gif">';
+  document.getElementById("egg").innerHTML = '<img class="large" src="/egg/0x539.gif">';
  }
- if (egg.slice(-24) == "allyourbasearebelongtous") {
+ if (egg.slice(-6) == "0x7a69") {
   document.body.style.opacity = "0.9";
   block(document.getElementById("egg"));
-  document.getElementById("egg").innerHTML = '<img class="small" src="/egg/allyourbasearebelongtous.gif">';
+  document.getElementById("egg").innerHTML = '<img class="small" src="/egg/0x7a69.gif">';
  }
  if (egg.slice(-5) == "xyzzy") {
   document.getElementById("egg").innerHTML = '<video preload="auto" id="xyzzy"><source src="/egg/xyzzy.mp4" type="video/mp4"></video>';

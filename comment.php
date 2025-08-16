@@ -2,7 +2,7 @@
   if (date("a") == "am") {
    include "comment0.php";
   } else {
-   switch (rand(1,7)) {
+   switch (rand(1,6)) {
     case 1:
      include "comment1.php";
      break;
@@ -20,9 +20,6 @@
      break;
     case 6:
      include "comment6.php";
-     break;
-    case 7:
-     include "comment7.php";
      break;
     default:
      include "comment1.php";
